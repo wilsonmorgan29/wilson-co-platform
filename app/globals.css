@@ -539,6 +539,169 @@ textarea.w-field-input { resize: none; line-height: 1.6; }
 .w-footer-text  { font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; }
 .w-footer-link  { color: var(--oak-light); cursor: pointer; }
 
+/* ── Dashboard Layout ── */
+.w-dash-layout { display: flex; min-height: 100vh; background: var(--beige); }
+
+.w-dash-sidebar {
+  width: 220px;
+  flex-shrink: 0;
+  background: var(--w-black);
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0; left: 0;
+  height: 100vh;
+  z-index: 50;
+  overflow-y: auto;
+}
+
+.w-dash-sidebar-logo {
+  padding: 22px 18px 14px;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.w-dash-sidebar-logo-main {
+  font-family: var(--font-display), 'Gill Sans MT', 'Century Gothic', sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--oak-light);
+  line-height: 1;
+}
+
+.w-dash-sidebar-logo-sub {
+  font-size: 8px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.22);
+  margin-top: 4px;
+  line-height: 1;
+}
+
+.w-dash-nav { padding: 10px; flex: 1; }
+
+.w-dash-nav-item {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 8px 9px;
+  border-radius: 6px;
+  font-size: 12px;
+  color: rgba(255,255,255,0.45);
+  cursor: pointer;
+  transition: all 0.15s;
+  border: none;
+  background: transparent;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 1px;
+  font-weight: 300;
+}
+
+.w-dash-nav-item:hover { background: rgba(255,255,255,0.06); color: rgba(255,255,255,0.8); }
+.w-dash-nav-item.active { background: rgba(93,107,61,0.22); color: var(--oak-light); }
+
+.w-dash-badge {
+  margin-left: auto;
+  background: var(--oak);
+  color: white;
+  font-size: 9px;
+  font-weight: 600;
+  padding: 1px 6px;
+  border-radius: 10px;
+  line-height: 1.5;
+}
+
+.w-dash-sidebar-user {
+  padding: 12px 14px;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.w-dash-avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  font-weight: 500;
+  color: white;
+  flex-shrink: 0;
+}
+
+.w-dash-main { margin-left: 220px; flex: 1; min-height: 100vh; }
+
+.w-dash-topbar {
+  background: var(--w-white);
+  border-bottom: 1px solid var(--w-border);
+  padding: 0 28px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 40;
+}
+
+.w-dash-content { padding: 26px 28px; max-width: 840px; }
+
+.w-stat-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-bottom: 20px; }
+
+.w-stat-box {
+  background: var(--w-white);
+  border: 1px solid var(--w-border);
+  border-radius: var(--w-radius);
+  padding: 14px 15px;
+  box-shadow: var(--shadow-sm);
+}
+
+.w-stat-value {
+  font-family: var(--font-display), 'Gill Sans MT', 'Century Gothic', sans-serif;
+  font-size: 22px;
+  letter-spacing: 0.02em;
+  color: var(--w-black);
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.w-stat-label { font-size: 9px; font-weight: 400; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-3); }
+
+.w-activity-item { display: flex; gap: 10px; padding: 9px 0; border-bottom: 1px solid var(--w-border-light); }
+.w-activity-item:last-child { border-bottom: none; }
+.w-activity-dot { width: 5px; height: 5px; border-radius: 50%; background: var(--oak); flex-shrink: 0; margin-top: 5px; }
+.w-activity-date { font-size: 10px; color: var(--ink-3); white-space: nowrap; min-width: 46px; font-weight: 300; }
+.w-activity-text { font-size: 12px; font-weight: 300; color: var(--ink-2); line-height: 1.5; }
+
+.w-kanban { display: flex; gap: 10px; overflow-x: auto; padding-bottom: 8px; }
+.w-kanban-col { flex: 0 0 195px; }
+.w-kanban-col-header { font-size: 8px; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: var(--ink-3); margin-bottom: 8px; padding: 0 1px; display: flex; align-items: center; justify-content: space-between; }
+.w-kanban-count { background: var(--beige-mid); color: var(--ink-3); font-size: 9px; padding: 1px 5px; border-radius: 8px; }
+.w-kanban-card { background: var(--w-white); border: 1px solid var(--w-border); border-radius: var(--w-radius-sm); padding: 10px 12px; margin-bottom: 7px; box-shadow: var(--shadow-sm); }
+.w-kanban-card-name { font-size: 11px; font-weight: 500; color: var(--w-black); margin-bottom: 2px; }
+.w-kanban-card-sub { font-size: 10px; font-weight: 300; color: var(--ink-3); }
+.w-kanban-card-note { font-size: 9px; color: var(--ink-3); margin-top: 7px; font-weight: 300; line-height: 1.4; padding-top: 6px; border-top: 1px solid var(--w-border-light); }
+
+.w-thread-item { display: flex; gap: 11px; padding: 12px 0; border-bottom: 1px solid var(--w-border-light); cursor: pointer; }
+.w-thread-item:last-child { border-bottom: none; }
+
+.w-member-browse-card { background: var(--w-white); border: 1px solid var(--w-border); border-radius: var(--w-radius); padding: 14px 16px; margin-bottom: 9px; display: flex; align-items: center; gap: 14px; transition: border-color 0.18s; }
+.w-member-browse-card:hover { border-color: rgba(26,26,26,0.2); }
+
+.w-vis-mode { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 18px; }
+.w-vis-mode-btn { padding: 13px 10px; border: 1.5px solid var(--w-border); border-radius: var(--w-radius); text-align: center; cursor: pointer; transition: all 0.2s; background: var(--w-white); }
+.w-vis-mode-btn.active { border-color: var(--oak); background: var(--oak-bg); }
+.w-vis-mode-label { font-size: 11px; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; color: var(--w-black); margin-bottom: 3px; }
+.w-vis-mode-desc { font-size: 10px; font-weight: 300; color: var(--ink-3); line-height: 1.4; }
+
+.w-login-page { min-height: 100vh; background: var(--beige); display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 32px; }
+.w-login-card { background: var(--w-white); border: 1.5px solid var(--w-border); border-radius: 12px; padding: 28px 24px; cursor: pointer; transition: all 0.2s; text-align: center; }
+.w-login-card:hover { border-color: var(--oak); transform: translateY(-2px); box-shadow: var(--shadow-md); }
+
 /* Animations */
 @keyframes wFadeUp {
   from { opacity: 0; transform: translateY(6px); }
