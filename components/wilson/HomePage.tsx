@@ -2,103 +2,145 @@
 
 import Link from 'next/link'
 
+const SERVICES = [
+  {
+    label: 'Recruiting',
+    badge: 'w-badge-denim',
+    body: 'Proactive, relationship-driven recruiting for companies that are serious about who they hire. We don\'t post and pray — we find the right person, build the relationship, and make the introduction.',
+    href: '/services#recruiting',
+  },
+  {
+    label: 'Career Coaching',
+    badge: 'w-badge-oak',
+    body: '1:1 coaching for senior professionals navigating transitions. We help you get clear on what you actually want, move strategically, and land somewhere you\'re proud of.',
+    href: '/services#coaching',
+  },
+  {
+    label: 'Corporate Consulting',
+    badge: 'w-badge-hyd',
+    body: 'Working with leadership teams to build better hiring practices, improve how they treat candidates, and retain the people they already have.',
+    href: '/services#consulting',
+  },
+]
+
 export default function HomePage() {
   return (
     <>
       {/* Hero */}
-      <div className="w-hero">
-        <div className="w-eyebrow" style={{ marginBottom: 16 }}>
-          Career Coaching · Talent Collective · Nashville &amp; NYC
+      <div className="w-hero" style={{ paddingBottom: 72 }}>
+        <div className="w-eyebrow" style={{ marginBottom: 18 }}>
+          Career Coaching · Recruiting · Talent Collective · Nashville &amp; NYC
         </div>
-        <h1 className="w-display" style={{ marginTop: 14 }}>
-          Your career,<br />
-          on <em>your terms.</em>
+        <h1 className="w-display" style={{ fontSize: 'clamp(28px, 4.5vw, 48px)', marginBottom: 20, maxWidth: 700 }}>
+          Empowering people and organizations to grow with <em>clarity, confidence, and purpose.</em>
         </h1>
         <p className="w-hero-sub">
-          The Wilson Co. is a career coaching and talent collective built for mid-career professionals
-          who are done waiting for the right opportunity to find them. We help you get clear, move
-          strategically, and land where you actually want to be.
+          The Wilson Co. works with senior professionals and growing companies to make the right match —
+          not just the available one. Built on real relationships and ten years of knowing what both sides actually need.
         </p>
         <div className="w-hero-actions">
-          <Link href="/member" className="w-btn w-btn-oak">Join the collective →</Link>
-          <Link href="/company" className="w-btn w-btn-outline">For companies</Link>
+          <Link href="/collective" className="w-btn w-btn-oak">The Collective →</Link>
+          <Link href="/services"   className="w-btn w-btn-outline">Our services</Link>
+          <Link href="/contact"    className="w-btn w-btn-ghost">Get in touch</Link>
         </div>
       </div>
 
       <div className="w-container"><div className="w-divider" /></div>
 
-      {/* Two paths */}
+      {/* Services */}
       <div className="w-section w-container">
-        <p className="w-eyebrow" style={{ marginBottom: 20 }}>Two ways to work with us</p>
-        <div className="w-grid-2">
-
-          <Link href="/member" className="w-card" style={{ cursor: 'pointer', transition: 'all 0.2s', textDecoration: 'none' }}
-            onMouseOver={(e) => (e.currentTarget.style.borderColor = 'var(--oak)')}
-            onMouseOut={(e) => (e.currentTarget.style.borderColor = 'var(--w-border)')}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 12 }}>
-              <span className="w-badge w-badge-denim">For you</span>
-            </div>
-            <div style={{ fontFamily: "'Didact Gothic', sans-serif", fontSize: 16, letterSpacing: '0.05em', textTransform: 'uppercase', color: 'var(--w-black)', marginBottom: 8 }}>
-              As a member
-            </div>
-            <div style={{ fontSize: 13, fontWeight: 300, color: 'var(--ink-2)', lineHeight: 1.7, marginBottom: 14 }}>
-              Senior leaders who are selectively open to the right opportunity. You control your visibility, set your terms, and only hear about things that actually match what you want next.
-            </div>
-            <div style={{ fontSize: 11, fontWeight: 500, color: 'var(--oak)', letterSpacing: '0.06em', textTransform: 'uppercase' }}>
-              Start with a clarity call →
-            </div>
-          </Link>
-
-          <Link href="/company" className="w-card" style={{ cursor: 'pointer', transition: 'all 0.2s', textDecoration: 'none' }}
-            onMouseOver={(e) => (e.currentTarget.style.borderColor = 'var(--denim)')}
-            onMouseOut={(e) => (e.currentTarget.style.borderColor = 'var(--w-border)')}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 12 }}>
-              <span className="w-badge w-badge-oak">For your team</span>
-            </div>
-            <div style={{ fontFamily: "'Didact Gothic', sans-serif", fontSize: 16, letterSpacing: '0.05em', textTransform: 'uppercase', color: 'var(--w-black)', marginBottom: 8 }}>
-              As a company
-            </div>
-            <div style={{ fontSize: 13, fontWeight: 300, color: 'var(--ink-2)', lineHeight: 1.7, marginBottom: 14 }}>
-              Access to senior leaders who aren&apos;t on job boards and won&apos;t respond to cold outreach. Goals-matched introductions to people who are genuinely aligned with what you&apos;re building.
-            </div>
-            <div style={{ fontSize: 11, fontWeight: 500, color: 'var(--denim)', letterSpacing: '0.06em', textTransform: 'uppercase' }}>
-              View company access →
-            </div>
-          </Link>
-
-        </div>
-      </div>
-
-      {/* How it works */}
-      <div className="w-section w-container">
-        <p className="w-eyebrow" style={{ marginBottom: 20 }}>How it works</p>
-        <div className="w-grid-2" style={{ gap: 8 }}>
-          {[
-            { num: '01', title: 'Clarity first', body: "Every member starts with a 60-minute clarity call with Morgan. Not a screener — a real conversation about what you want, what you've outgrown, and what you'd actually move for." },
-            { num: '02', title: 'Goals profile, not resume', body: "Your goals profile lives in the collective — not a resume. It captures what you want next, what cultures fit you, what you're done with, and what you'd walk away from a bigger title to get." },
-            { num: '03', title: 'You control visibility', body: "Dark, selective, or active — you set who can see you, what they see, and nothing moves without your explicit approval. Companies go through an audit before they can access the network at all." },
-            { num: '04', title: 'Human-reviewed matches', body: "Every opportunity is reviewed against your goals profile by a person before it reaches you. No algorithm alone decides what you see. And companies never know you passed." },
-          ].map(item => (
-            <div key={item.num} className="w-card w-card-beige">
-              <div style={{ fontFamily: "'Didact Gothic', sans-serif", fontSize: 22, color: 'var(--beige-dark)', letterSpacing: '0.04em', marginBottom: 8 }}>{item.num}</div>
-              <div style={{ fontSize: 12, fontWeight: 500, color: 'var(--oak)', marginBottom: 5, letterSpacing: '0.04em', textTransform: 'uppercase' }}>{item.title}</div>
-              <div style={{ fontSize: 12, fontWeight: 300, color: 'var(--ink-2)', lineHeight: 1.7 }}>{item.body}</div>
-            </div>
+        <p className="w-eyebrow" style={{ marginBottom: 20 }}>What we do</p>
+        <div className="w-grid-3">
+          {SERVICES.map(s => (
+            <Link key={s.label} href={s.href} className="w-card" style={{ textDecoration: 'none', display: 'block', transition: 'border-color 0.2s' }}
+              onMouseOver={e => (e.currentTarget.style.borderColor = 'var(--oak)')}
+              onMouseOut={e  => (e.currentTarget.style.borderColor = 'var(--w-border)')}>
+              <span className={`w-badge ${s.badge}`} style={{ marginBottom: 12, display: 'inline-block' }}>{s.label}</span>
+              <div style={{ fontSize: 13, fontWeight: 300, color: 'var(--ink-2)', lineHeight: 1.75, marginBottom: 14 }}>{s.body}</div>
+              <div style={{ fontSize: 10, fontWeight: 500, color: 'var(--oak)', letterSpacing: '0.08em', textTransform: 'uppercase' }}>Learn more →</div>
+            </Link>
           ))}
         </div>
       </div>
 
-      {/* Founding cohort CTA */}
+      <div className="w-container"><div className="w-divider" /></div>
+
+      {/* Our Why */}
       <div className="w-section w-container">
-        <div className="w-card w-card-oak" style={{ padding: '28px', textAlign: 'center' }}>
-          <p className="w-eyebrow" style={{ marginBottom: 12 }}>Founding cohort — 50 spots</p>
-          <div style={{ fontFamily: "'Didact Gothic', sans-serif", fontSize: 20, letterSpacing: '0.05em', textTransform: 'uppercase', color: 'var(--w-black)', marginBottom: 10 }}>
-            Hand-selected. Not open enrollment.
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1.6fr', gap: 40, alignItems: 'start' }}>
+          <div>
+            <p className="w-eyebrow" style={{ marginBottom: 16 }}>Our why</p>
+            <h2 className="w-display" style={{ fontSize: 'clamp(22px, 3vw, 32px)', marginBottom: 0 }}>
+              Built after watching the industry <em>fail everyone.</em>
+            </h2>
           </div>
-          <div style={{ fontSize: 13, fontWeight: 300, color: 'var(--ink-2)', lineHeight: 1.75, maxWidth: 460, margin: '0 auto 20px' }}>
-            The founding cohort is being built through direct invitation. If you&apos;re a senior leader who is done with how recruiting works, this is for you.
+          <div>
+            <p style={{ fontSize: 13, fontWeight: 300, color: 'var(--ink-2)', lineHeight: 1.85, marginBottom: 16 }}>
+              After more than ten years in the recruiting industry, I&apos;ve watched it get worse in almost every direction.
+              Jobs posted on LinkedIn generate thousands of résumés before lunch. Algorithms screen people before a
+              human reads their name. Candidates are ghosted. Hiring managers are overwhelmed. Both sides walk away
+              frustrated — and somehow the process keeps getting repeated.
+            </p>
+            <p style={{ fontSize: 13, fontWeight: 300, color: 'var(--ink-2)', lineHeight: 1.85, marginBottom: 20 }}>
+              The Wilson Co. was built after years of hearing the same thing from both sides: there has to be a better way.
+              A more authentic, more thoughtful approach to hiring — one that respects the gravity of a career decision
+              and treats both the person and the company as partners in getting it right.
+            </p>
+            <Link href="/about" className="w-btn w-btn-outline" style={{ fontSize: 11 }}>Read the full story →</Link>
           </div>
-          <Link href="/member" className="w-btn w-btn-oak">Apply for a founding spot →</Link>
+        </div>
+      </div>
+
+      <div className="w-container"><div className="w-divider" /></div>
+
+      {/* The Collective */}
+      <div className="w-section w-container">
+        <p className="w-eyebrow" style={{ marginBottom: 20 }}>The Wilson Co. Talent Collective</p>
+        <div className="w-card" style={{ background: 'var(--w-black)', border: 'none', padding: '36px 32px' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 32, alignItems: 'center' }}>
+            <div>
+              <h2 style={{ fontFamily: 'var(--font-display), "Gill Sans MT", sans-serif', fontSize: 'clamp(20px, 2.5vw, 28px)', letterSpacing: '0.05em', textTransform: 'uppercase', color: 'var(--w-white)', marginBottom: 14 }}>
+                A private network built on <span style={{ color: 'var(--oak-light)', fontStyle: 'italic', fontFamily: 'Georgia, serif', textTransform: 'none' }}>mutual respect.</span>
+              </h2>
+              <p style={{ fontSize: 13, fontWeight: 300, color: 'rgba(255,255,255,0.55)', lineHeight: 1.8, marginBottom: 20 }}>
+                The Collective is a curated network of senior operators who are selectively open to the right next role.
+                Members control their visibility. Companies earn access through an audit. Nothing moves without consent on both sides.
+              </p>
+              <Link href="/collective" className="w-btn w-btn-oak">Learn how it works →</Link>
+            </div>
+            <div className="w-stack" style={{ gap: 10 }}>
+              {[
+                { icon: '◎', label: 'For members', desc: 'Apply by intake. Control your visibility. Only hear about roles that actually match what you want next.' },
+                { icon: '◈', label: 'For companies', desc: 'Complete an audit. Commit to standards. Access senior leaders who aren\'t on job boards.' },
+              ].map(item => (
+                <div key={item.label} style={{ background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.08)', borderRadius: 'var(--w-radius)', padding: '16px 18px' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 6 }}>
+                    <span style={{ color: 'var(--oak-light)', fontSize: 14 }}>{item.icon}</span>
+                    <span style={{ fontSize: 11, fontWeight: 500, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.7)' }}>{item.label}</span>
+                  </div>
+                  <p style={{ fontSize: 12, fontWeight: 300, color: 'rgba(255,255,255,0.4)', lineHeight: 1.65, margin: 0 }}>{item.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Contact CTA */}
+      <div className="w-section w-container" style={{ paddingBottom: 64 }}>
+        <div className="w-card w-card-beige" style={{ textAlign: 'center', padding: '36px 32px' }}>
+          <p className="w-eyebrow" style={{ marginBottom: 12 }}>Let&apos;s talk</p>
+          <h2 className="w-display" style={{ fontSize: 'clamp(20px, 3vw, 28px)', marginBottom: 12 }}>
+            Not sure where to start? <em>Start here.</em>
+          </h2>
+          <p style={{ fontSize: 13, fontWeight: 300, color: 'var(--ink-3)', lineHeight: 1.75, maxWidth: 420, margin: '0 auto 24px' }}>
+            Whether you&apos;re an individual looking for clarity on your next move or a company tired of the same broken process —
+            reach out. We&apos;d love to hear where you are.
+          </p>
+          <div className="w-hero-actions" style={{ justifyContent: 'center' }}>
+            <Link href="/contact" className="w-btn w-btn-oak">Contact us →</Link>
+            <Link href="/services" className="w-btn w-btn-outline">View services</Link>
+          </div>
         </div>
       </div>
     </>
