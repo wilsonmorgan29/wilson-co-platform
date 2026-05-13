@@ -69,7 +69,7 @@ export default function AboutPage() {
           </div>
           <div className="w-stack" style={{ gap: 16 }}>
             <p style={{ fontSize: 13, fontWeight: 300, color: 'var(--ink-2)', lineHeight: 1.85 }}>
-              The Wilson Co. is based in Nashville, Tennessee and works with clients nationwide.
+              The Wilson Co. is based in New York City and works with clients across the country.
               Our approach is personal, practical, and rooted in real-world experience. We don&apos;t
               believe in one-size-fits-all recruiting or cookie-cutter career advice. Every engagement
               starts with a real conversation about what you actually need.

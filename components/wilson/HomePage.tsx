@@ -29,7 +29,7 @@ export default function HomePage() {
       {/* Hero */}
       <div className="w-hero" style={{ paddingBottom: 72 }}>
         <div className="w-eyebrow" style={{ marginBottom: 18 }}>
-          Career Coaching · Recruiting · Talent Collective · Nashville &amp; NYC
+          Career Coaching · Recruiting · Talent Collective · New York City · Nationwide
         </div>
         <h1 className="w-display" style={{ fontSize: 'clamp(28px, 4.5vw, 48px)', marginBottom: 20, maxWidth: 700 }}>
           Empowering people and organizations to grow with <em>clarity, confidence, and purpose.</em>

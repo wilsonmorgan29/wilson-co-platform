@@ -28,7 +28,7 @@ export default function WilsonShell({ children }: { children: React.ReactNode })
       <div className="w-topbar">
         <span className="w-topbar-text">
           Clarity <span>·</span> Confidence <span>·</span> Purpose
-          <span>·</span> Nashville &amp; New York City
+          <span>·</span> New York City · Nationwide
         </span>
       </div>
 

@@ -53,10 +53,10 @@ export default function ContactPage() {
           {/* Left — info */}
           <div>
             <div className="w-card w-card-beige" style={{ marginBottom: 12 }}>
-              <p className="w-eyebrow" style={{ marginBottom: 10 }}>Nashville, Tennessee</p>
+              <p className="w-eyebrow" style={{ marginBottom: 10 }}>New York City</p>
               <p style={{ fontSize: 13, fontWeight: 300, color: 'var(--ink-2)', lineHeight: 1.75 }}>
-                Based in Nashville, working with clients nationwide. We&apos;re available for in-person
-                meetings locally and virtual conversations everywhere else.
+                Based in New York City, working with clients across the country. We&apos;re available
+                for in-person meetings in NYC and virtual conversations everywhere else.
               </p>
             </div>
 
