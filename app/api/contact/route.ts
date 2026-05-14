@@ -93,8 +93,12 @@ export async function POST(req: NextRequest) {
         }),
       })
 
+      const resBody = await res.text()
       if (!res.ok) {
-        console.error('Resend error:', await res.text())
+        console.error('Resend error status:', res.status)
+        console.error('Resend error body:', resBody)
+      } else {
+        console.log('Resend success:', resBody)
       }
     } else {
       // Dev mode — log to terminal
