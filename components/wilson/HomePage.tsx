@@ -35,8 +35,9 @@ export default function HomePage() {
           Empowering people and organizations to grow with <em>clarity, confidence, and purpose.</em>
         </h1>
         <p className="w-hero-sub">
-          The Wilson Co. works with senior professionals and growing companies to make the right match —
-          not just the available one. Built on real relationships and ten years of knowing what both sides actually need.
+          The Wilson Co. works with mid-level to senior professionals — primarily in legal, financial services,
+          private equity, and startups — and the companies looking to hire them. Built on real relationships
+          and ten years of knowing what both sides actually need.
         </p>
         <div className="w-hero-actions">
           <Link href="/collective" className="w-btn w-btn-oak">The Collective →</Link>

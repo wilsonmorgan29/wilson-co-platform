@@ -10,8 +10,8 @@ export default function AboutPage() {
           Built by someone who&apos;s been <em>in the room.</em>
         </h1>
         <p className="w-hero-sub">
-          Over ten years in the recruiting industry. Hundreds of placements. Both sides of the table, hundreds of times.
-          The Wilson Co. was built from everything that experience taught — including what was consistently, frustratingly broken.
+          Over ten years in the recruiting industry. Hundreds of placements across legal, financial services, private equity, and startups.
+          Both sides of the table, hundreds of times. The Wilson Co. was built from everything that experience taught — including what was consistently, frustratingly broken.
         </p>
       </div>
 

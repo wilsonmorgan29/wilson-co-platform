@@ -68,8 +68,8 @@ export default function CollectivePage() {
                 Your next role, <em>on your terms.</em>
               </h3>
               <p style={{ fontSize: 12, fontWeight: 300, color: 'var(--ink-3)', lineHeight: 1.75, marginBottom: 16 }}>
-                Membership is by application. We review every intake personally. Members are senior operators
-                across legal, operations, finance, people, and strategy.
+                Membership is by application. We review every intake personally. Members are mid-level to senior professionals
+                primarily in legal, legal services, financial services, private equity, and startups.
               </p>
               <div className="w-stack" style={{ gap: 8, marginBottom: 20 }}>
                 {HOW_IT_WORKS.map(s => (

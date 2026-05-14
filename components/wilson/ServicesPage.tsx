@@ -10,7 +10,7 @@ const SERVICES = [
       'Most recruiting looks the same: post a job, collect résumés, screen, repeat. It\'s built for volume, not quality. The people who are actually right for a role are often the ones who never saw the posting — because they\'re not actively looking, or they\'ve learned that applying through job boards rarely goes anywhere.',
       'We work differently. Every search starts with a deep conversation about what you actually need — the role, yes, but also the culture, the leadership, the trajectory. Then we go find the person, not wait for them to find you. Proactive outreach, real relationship-building, and honest assessments before we ever make an introduction.',
     ],
-    details: ['Executive and senior leadership placements', 'Direct hire and retained search', 'Finance, legal, operations, and general management', 'Based in NYC · working nationwide'],
+    details: ['Mid-level to senior leadership placements', 'Direct hire and retained search', 'Legal, legal services, financial services, private equity, and startups', 'Based in NYC · working nationwide'],
   },
   {
     id: 'coaching',
@@ -21,7 +21,7 @@ const SERVICES = [
       'Most people who come to us for coaching don\'t lack ambition — they lack clarity. They know what they\'ve outgrown. They have a general sense of what they want. But they haven\'t had a real conversation with someone who can help them articulate it, pressure-test it, and build a real plan around it.',
       'Career coaching at The Wilson Co. is personal and practical. We start with where you actually are — not where your LinkedIn says you are — and build from there. No frameworks for the sake of frameworks. No generic advice. Just honest conversation and real accountability.',
     ],
-    details: ['1:1 engagement — not group sessions', 'Career transition and pivot support', 'Senior professionals and emerging leaders', 'Available virtually, nationwide'],
+    details: ['1:1 engagement — not group sessions', 'Career transition and pivot support', 'Mid-level to senior professionals in legal, finance, PE, and startups', 'Available virtually, nationwide'],
   },
   {
     id: 'consulting',
