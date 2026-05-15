@@ -48,6 +48,19 @@ export default function HomePage() {
 
       <div className="w-container"><div className="w-divider" /></div>
 
+      {/* As seen in */}
+      <div className="w-container" style={{ padding: '24px 0' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 24, flexWrap: 'wrap', justifyContent: 'center' }}>
+          <span style={{ fontSize: 9, letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--ink-3)', marginRight: 8 }}>As seen in</span>
+          {['AP News', 'CEO Weekly', 'US Insider'].map(pub => (
+            <span key={pub} style={{ fontSize: 12, fontWeight: 500, color: 'var(--ink-2)', letterSpacing: '0.04em', opacity: 0.6 }}>{pub}</span>
+          ))}
+          <a href="https://substack.com/@thewilsonco" target="_blank" rel="noopener noreferrer" style={{ fontSize: 12, fontWeight: 500, color: 'var(--oak)', letterSpacing: '0.04em', textDecoration: 'none', opacity: 0.8 }}>Substack ↗</a>
+        </div>
+      </div>
+
+      <div className="w-container"><div className="w-divider" /></div>
+
       {/* Services */}
       <div className="w-section w-container">
         <p className="w-eyebrow" style={{ marginBottom: 20 }}>What we do</p>

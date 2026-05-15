@@ -14,6 +14,7 @@ export default function WilsonShell({ children }: { children: React.ReactNode })
     { href: '/services',   label: 'Services'       },
     { href: '/collective', label: 'The Collective' },
     { href: '/pricing',    label: 'Pricing'        },
+    { href: '/press',      label: 'Press'          },
     { href: '/contact',    label: 'Contact'        },
   ]
 
