@@ -16,7 +16,7 @@ const FEATURES = [
   {
     publication: 'US Insider',
     headline: 'Why High Performers Get Stuck',
-    href: '#',
+    href: 'https://usinsider.com/why-high-performers-get-stuck-mid-career-and-what-most-career-advice-gets-wrong/',
     badge: 'w-badge-hyd',
   },
 ]
