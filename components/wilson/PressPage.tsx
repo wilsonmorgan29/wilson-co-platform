@@ -4,7 +4,7 @@ const FEATURES = [
   {
     publication: 'AP News',
     headline: 'Bringing The Human Edge Back to Career Strategy',
-    href: '#',
+    href: 'https://apnews.com/press-release/pr-newswire/morgan-wilson-launches-the-wilson-co-to-bring-a-human-edge-back-to-career-strategy-and-talent-development-af48352eaed8363a650eadbfec60974e',
     badge: 'w-badge-denim',
   },
   {
