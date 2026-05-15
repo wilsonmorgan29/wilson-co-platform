@@ -10,7 +10,7 @@ const FEATURES = [
   {
     publication: 'CEO Weekly',
     headline: 'The Professional Lie We Rarely Question',
-    href: '#',
+    href: 'https://ceoweekly.com/morgan-wilsons-take-on-the-professional-lie-we-rarely-question/',
     badge: 'w-badge-oak',
   },
   {
