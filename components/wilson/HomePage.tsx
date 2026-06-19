@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 
 const SERVICES = [
   {
@@ -28,21 +29,35 @@ export default function HomePage() {
     <>
       {/* Hero */}
       <div className="w-hero" style={{ paddingBottom: 72 }}>
-        <div className="w-eyebrow" style={{ marginBottom: 18 }}>
-          Career Coaching · Recruiting · Talent Collective · New York City · Nationwide
-        </div>
-        <h1 className="w-display" style={{ fontSize: 'clamp(28px, 4.5vw, 48px)', marginBottom: 20, maxWidth: 700 }}>
-          Empowering people and organizations to grow with <em>clarity, confidence, and purpose.</em>
-        </h1>
-        <p className="w-hero-sub">
-          The Wilson Co. works with mid-level to senior professionals — primarily in legal, financial services,
-          private equity, and startups — and the companies looking to hire them. Built on real relationships
-          and ten years of knowing what both sides actually need.
-        </p>
-        <div className="w-hero-actions">
-          <Link href="/collective" className="w-btn w-btn-oak">The Collective →</Link>
-          <Link href="/services"   className="w-btn w-btn-outline">Our services</Link>
-          <Link href="/contact"    className="w-btn w-btn-ghost">Get in touch</Link>
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr auto', gap: 48, alignItems: 'center' }}>
+          <div>
+            <div className="w-eyebrow" style={{ marginBottom: 18 }}>
+              Career Coaching · Corporate Consulting · Recruiting
+            </div>
+            <h1 className="w-display" style={{ fontSize: 'clamp(28px, 4.5vw, 48px)', marginBottom: 20, maxWidth: 560 }}>
+              Empowering people and organizations to grow with <em>clarity, confidence, and purpose.</em>
+            </h1>
+            <p className="w-hero-sub">
+              The Wilson Co. works with mid-level to senior professionals — primarily in legal, financial services,
+              private equity, and startups — and the companies looking to hire them. Built on real relationships
+              and ten years of knowing what both sides actually need.
+            </p>
+            <div className="w-hero-actions">
+              <Link href="/services" className="w-btn w-btn-oak">Our services →</Link>
+              <Link href="/contact"  className="w-btn w-btn-outline">Get in touch</Link>
+            </div>
+          </div>
+          <div style={{ flexShrink: 0 }}>
+            <div style={{ width: 320, height: 400, borderRadius: 'var(--w-radius)', overflow: 'hidden', position: 'relative' }}>
+              <Image
+                src="/morgan-home.jpg"
+                alt="Morgan Wilson"
+                fill
+                style={{ objectFit: 'cover', objectPosition: 'center top' }}
+                priority
+              />
+            </div>
+          </div>
         </div>
       </div>
 
@@ -52,10 +67,17 @@ export default function HomePage() {
       <div className="w-container" style={{ padding: '24px 0' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: 24, flexWrap: 'wrap', justifyContent: 'center' }}>
           <span style={{ fontSize: 9, letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--ink-3)', marginRight: 8 }}>As seen in</span>
-          {['AP News', 'CEO Weekly', 'US Insider'].map(pub => (
-            <span key={pub} style={{ fontSize: 12, fontWeight: 500, color: 'var(--ink-2)', letterSpacing: '0.04em', opacity: 0.6 }}>{pub}</span>
+          {[
+            { label: 'AP News', href: 'https://apnews.com/press-release/pr-newswire/morgan-wilson-launches-the-wilson-co-to-bring-a-human-edge-back-to-career-strategy-and-talent-development-af48352eaed8363a650eadbfec60974e' },
+            { label: 'CEO Weekly', href: 'https://ceoweekly.com/morgan-wilsons-take-on-the-professional-lie-we-rarely-question/' },
+            { label: 'US Insider', href: 'https://usinsider.com/why-high-performers-get-stuck-mid-career-and-what-most-career-advice-gets-wrong/' },
+          ].map(pub => (
+            <a key={pub.label} href={pub.href} target="_blank" rel="noopener noreferrer" style={{ fontSize: 12, fontWeight: 500, color: 'var(--ink-2)', letterSpacing: '0.04em', opacity: 0.6, textDecoration: 'none' }}
+              onMouseOver={e => (e.currentTarget.style.opacity = '1')}
+              onMouseOut={e => (e.currentTarget.style.opacity = '0.6')}
+            >{pub.label} ↗</a>
           ))}
-          <a href="https://substack.com/@thewilsonco" target="_blank" rel="noopener noreferrer" style={{ fontSize: 12, fontWeight: 500, color: 'var(--oak)', letterSpacing: '0.04em', textDecoration: 'none', opacity: 0.8 }}>Substack ↗</a>
+          <a href="https://thewilsonco.substack.com" target="_blank" rel="noopener noreferrer" style={{ fontSize: 12, fontWeight: 500, color: 'var(--oak)', letterSpacing: '0.04em', textDecoration: 'none', opacity: 0.8 }}>Substack ↗</a>
         </div>
       </div>
 
@@ -101,41 +123,6 @@ export default function HomePage() {
               and treats both the person and the company as partners in getting it right.
             </p>
             <Link href="/about" className="w-btn w-btn-outline" style={{ fontSize: 11 }}>Read the full story →</Link>
-          </div>
-        </div>
-      </div>
-
-      <div className="w-container"><div className="w-divider" /></div>
-
-      {/* The Collective */}
-      <div className="w-section w-container">
-        <p className="w-eyebrow" style={{ marginBottom: 20 }}>The Wilson Co. Talent Collective</p>
-        <div className="w-card" style={{ background: 'var(--w-black)', border: 'none', padding: '36px 32px' }}>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 32, alignItems: 'center' }}>
-            <div>
-              <h2 style={{ fontFamily: 'var(--font-display), "Gill Sans MT", sans-serif', fontSize: 'clamp(20px, 2.5vw, 28px)', letterSpacing: '0.05em', textTransform: 'uppercase', color: 'var(--w-white)', marginBottom: 14 }}>
-                A private network built on <span style={{ color: 'var(--oak-light)', fontStyle: 'italic', fontFamily: 'Georgia, serif', textTransform: 'none' }}>mutual respect.</span>
-              </h2>
-              <p style={{ fontSize: 13, fontWeight: 300, color: 'rgba(255,255,255,0.55)', lineHeight: 1.8, marginBottom: 20 }}>
-                The Collective is a curated network of senior operators who are selectively open to the right next role.
-                Members control their visibility. Companies earn access through an audit. Nothing moves without consent on both sides.
-              </p>
-              <Link href="/collective" className="w-btn w-btn-oak">Learn how it works →</Link>
-            </div>
-            <div className="w-stack" style={{ gap: 10 }}>
-              {[
-                { icon: '◎', label: 'For members', desc: 'Apply by intake. Control your visibility. Only hear about roles that actually match what you want next.' },
-                { icon: '◈', label: 'For companies', desc: 'Complete an audit. Commit to standards. Access senior leaders who aren\'t on job boards.' },
-              ].map(item => (
-                <div key={item.label} style={{ background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.08)', borderRadius: 'var(--w-radius)', padding: '16px 18px' }}>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 6 }}>
-                    <span style={{ color: 'var(--oak-light)', fontSize: 14 }}>{item.icon}</span>
-                    <span style={{ fontSize: 11, fontWeight: 500, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.7)' }}>{item.label}</span>
-                  </div>
-                  <p style={{ fontSize: 12, fontWeight: 300, color: 'rgba(255,255,255,0.4)', lineHeight: 1.65, margin: 0 }}>{item.desc}</p>
-                </div>
-              ))}
-            </div>
           </div>
         </div>
       </div>

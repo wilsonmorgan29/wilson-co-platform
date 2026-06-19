@@ -1,25 +1,53 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 
 const FEATURES = [
   {
     publication: 'AP News',
     headline: 'Bringing The Human Edge Back to Career Strategy',
     href: 'https://apnews.com/press-release/pr-newswire/morgan-wilson-launches-the-wilson-co-to-bring-a-human-edge-back-to-career-strategy-and-talent-development-af48352eaed8363a650eadbfec60974e',
-    badge: 'w-badge-denim',
+    img: '/press-ap.png',
   },
   {
     publication: 'CEO Weekly',
     headline: 'The Professional Lie We Rarely Question',
     href: 'https://ceoweekly.com/morgan-wilsons-take-on-the-professional-lie-we-rarely-question/',
-    badge: 'w-badge-oak',
+    img: '/press-ceo.png',
   },
   {
     publication: 'US Insider',
     headline: 'Why High Performers Get Stuck',
     href: 'https://usinsider.com/why-high-performers-get-stuck-mid-career-and-what-most-career-advice-gets-wrong/',
-    badge: 'w-badge-hyd',
+    img: '/press-usinsider.png',
+  },
+]
+
+const SUBSTACKS = [
+  {
+    title: 'How I Stopped Waiting for Inspiration and Started Chasing It',
+    excerpt: 'There are weeks where I feel like I could take over the world.',
+    href: 'https://thewilsonco.substack.com/p/how-i-stopped-waiting-for-inspiration',
+    img: '/sub-inspiration.jpeg',
+  },
+  {
+    title: 'When You Love the Work But Can\'t Stand the Person Running It',
+    excerpt: 'I\'ve been there. Sitting in my car before a Monday morning 1:1 knowing I had to sit through an entire hour with just my boss.',
+    href: 'https://thewilsonco.substack.com/p/when-you-love-the-work-but-cant-stand',
+    img: '/sub-boss.jpeg',
+  },
+  {
+    title: 'The Double Standard Of Being A Woman In A Man\'s (Corporate) World',
+    excerpt: 'What it actually costs to navigate corporate environments that weren\'t built for you.',
+    href: 'https://thewilsonco.substack.com/p/the-double-standard-of-being-a-woman',
+    img: '/sub-doublestandard.jpeg',
+  },
+  {
+    title: 'My Rockbottom Was My Turning Point',
+    excerpt: 'Losing the career I built my life around forced me into the hardest but most necessary reset of my life.',
+    href: 'https://thewilsonco.substack.com/p/my-rockbottom-was-my-turning-point',
+    img: '/sub-rockbottom.jpeg',
   },
 ]
 
@@ -43,7 +71,7 @@ export default function PressPage() {
       {/* Features */}
       <div className="w-section w-container">
         <p className="w-eyebrow" style={{ marginBottom: 20 }}>Featured in</p>
-        <div className="w-stack" style={{ gap: 12 }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 16 }}>
           {FEATURES.map(f => (
             <a
               key={f.headline}
@@ -51,15 +79,20 @@ export default function PressPage() {
               target="_blank"
               rel="noopener noreferrer"
               className="w-card"
-              style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 20, transition: 'border-color 0.2s' }}
+              style={{ textDecoration: 'none', padding: 0, overflow: 'hidden', display: 'flex', flexDirection: 'column', transition: 'border-color 0.2s' }}
               onMouseOver={e => (e.currentTarget.style.borderColor = 'var(--oak)')}
               onMouseOut={e  => (e.currentTarget.style.borderColor = 'var(--w-border)')}
             >
-              <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
-                <span className={`w-badge ${f.badge}`} style={{ flexShrink: 0 }}>{f.publication}</span>
-                <span style={{ fontSize: 14, fontWeight: 400, color: 'var(--ink-1)' }}>&ldquo;{f.headline}&rdquo;</span>
+              <div style={{ position: 'relative', width: '100%', aspectRatio: '9/16', maxHeight: 340, overflow: 'hidden', flexShrink: 0 }}>
+                <Image src={f.img} alt={f.headline} fill style={{ objectFit: 'cover', objectPosition: 'top' }} />
               </div>
-              <span style={{ fontSize: 10, color: 'var(--oak)', letterSpacing: '0.08em', textTransform: 'uppercase', flexShrink: 0 }}>Read →</span>
+              <div style={{ padding: '14px 16px 16px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 12 }}>
+                <div>
+                  <div style={{ fontSize: 9, fontWeight: 500, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--ink-3)', marginBottom: 4 }}>{f.publication}</div>
+                  <div style={{ fontSize: 12, fontWeight: 400, color: 'var(--ink-1)', lineHeight: 1.5 }}>&ldquo;{f.headline}&rdquo;</div>
+                </div>
+                <span style={{ fontSize: 10, color: 'var(--oak)', letterSpacing: '0.08em', textTransform: 'uppercase', flexShrink: 0 }}>Read →</span>
+              </div>
             </a>
           ))}
         </div>
@@ -69,27 +102,46 @@ export default function PressPage() {
 
       {/* Substack */}
       <div className="w-section w-container">
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1.8fr', gap: 40, alignItems: 'start' }}>
+        <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', marginBottom: 24 }}>
           <div>
-            <p className="w-eyebrow" style={{ marginBottom: 14 }}>Thought leadership</p>
-            <h2 className="w-display" style={{ fontSize: 'clamp(20px, 2.5vw, 28px)' }}>
-              Read the <em>newsletter.</em>
+            <p className="w-eyebrow" style={{ marginBottom: 8 }}>From the newsletter</p>
+            <h2 className="w-display" style={{ fontSize: 'clamp(20px, 2.5vw, 28px)', margin: 0 }}>
+              Honest takes on <em>career & hiring.</em>
             </h2>
           </div>
-          <div>
-            <p style={{ fontSize: 13, fontWeight: 300, color: 'var(--ink-2)', lineHeight: 1.85, marginBottom: 20 }}>
-              Honest takes on hiring, careers, and what actually matters when you&apos;re figuring out what comes next.
-              Published on Substack — no fluff, no recycled LinkedIn advice.
-            </p>
+          <a
+            href="https://thewilsonco.substack.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-btn w-btn-outline"
+            style={{ fontSize: 10, flexShrink: 0 }}
+          >
+            View all on Substack →
+          </a>
+        </div>
+
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 16 }}>
+          {SUBSTACKS.map(post => (
             <a
-              href="https://substack.com/@thewilsonco"
+              key={post.href}
+              href={post.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-btn w-btn-oak"
+              className="w-card"
+              style={{ textDecoration: 'none', padding: 0, overflow: 'hidden', display: 'flex', flexDirection: 'column', transition: 'border-color 0.2s' }}
+              onMouseOver={e => (e.currentTarget.style.borderColor = 'var(--oak)')}
+              onMouseOut={e  => (e.currentTarget.style.borderColor = 'var(--w-border)')}
             >
-              Read on Substack →
+              <div style={{ position: 'relative', width: '100%', height: 200, background: 'var(--w-bg-2)', flexShrink: 0 }}>
+                <Image src={post.img} alt={post.title} fill style={{ objectFit: 'cover', objectPosition: 'top' }} unoptimized />
+              </div>
+              <div style={{ padding: '16px 18px 18px' }}>
+                <div style={{ fontSize: 13, fontWeight: 500, color: 'var(--ink-1)', lineHeight: 1.5, marginBottom: 8 }}>{post.title}</div>
+                <div style={{ fontSize: 12, fontWeight: 300, color: 'var(--ink-3)', lineHeight: 1.65, marginBottom: 12 }}>{post.excerpt}</div>
+                <div style={{ fontSize: 9, fontWeight: 500, color: 'var(--oak)', letterSpacing: '0.1em', textTransform: 'uppercase' }}>Read on Substack →</div>
+              </div>
             </a>
-          </div>
+          ))}
         </div>
       </div>
 

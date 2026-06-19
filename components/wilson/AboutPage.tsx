@@ -1,18 +1,33 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function AboutPage() {
   return (
     <>
       {/* Hero */}
       <div className="w-hero" style={{ paddingBottom: 56 }}>
-        <p className="w-eyebrow" style={{ marginBottom: 16 }}>About The Wilson Co.</p>
-        <h1 className="w-display" style={{ fontSize: 'clamp(28px, 4vw, 44px)', marginBottom: 20, maxWidth: 620 }}>
-          Built by someone who&apos;s been <em>in the room.</em>
-        </h1>
-        <p className="w-hero-sub">
-          Over ten years in the recruiting industry. Hundreds of placements across legal, financial services, private equity, and startups.
-          Both sides of the table, hundreds of times. The Wilson Co. was built from everything that experience taught — including what was consistently, frustratingly broken.
-        </p>
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr auto', alignItems: 'flex-start', gap: 0 }}>
+          <div>
+            <p className="w-eyebrow" style={{ marginBottom: 16 }}>About The Wilson Co.</p>
+            <h1 className="w-display" style={{ fontSize: 'clamp(28px, 4vw, 44px)', marginBottom: 20, maxWidth: 620 }}>
+              Built by someone who&apos;s been <em>in the room.</em>
+            </h1>
+            <p className="w-hero-sub">
+              Over ten years in the recruiting industry. Hundreds of placements across legal, financial services, private equity, and startups.
+              Both sides of the table, hundreds of times. The Wilson Co. was built from everything that experience taught — including what was consistently, frustratingly broken.
+            </p>
+          </div>
+          <div style={{ flexShrink: 0, marginRight: -24, marginTop: -40 }}>
+            <Image
+              src="/morgan-cutout.png"
+              alt="Morgan Wilson"
+              width={420}
+              height={570}
+              style={{ objectFit: 'contain', objectPosition: 'top', display: 'block' }}
+              priority
+            />
+          </div>
+        </div>
       </div>
 
       <div className="w-container"><div className="w-divider" /></div>
@@ -79,11 +94,6 @@ export default function AboutPage() {
               and builds a real plan to get there — not just polish your LinkedIn profile. For companies,
               it means recruiting that actually works: proactive, relationship-driven, and accountable.
             </p>
-            <p style={{ fontSize: 13, fontWeight: 300, color: 'var(--ink-2)', lineHeight: 1.85 }}>
-              The Talent Collective is what happens when those two sides come together in a structure
-              that respects both of them — where members control their visibility and companies earn
-              access through a real commitment to how they treat candidates.
-            </p>
           </div>
         </div>
       </div>
@@ -115,8 +125,8 @@ export default function AboutPage() {
             Let&apos;s find the right fit — for you.
           </h2>
           <div className="w-hero-actions" style={{ justifyContent: 'center' }}>
-            <Link href="/contact"    className="w-btn w-btn-oak">Get in touch →</Link>
-            <Link href="/collective" className="w-btn w-btn-outline" style={{ borderColor: 'rgba(255,255,255,0.2)', color: 'rgba(255,255,255,0.7)' }}>Explore the Collective</Link>
+            <Link href="/contact"  className="w-btn w-btn-oak">Get in touch →</Link>
+            <Link href="/services" className="w-btn w-btn-outline" style={{ borderColor: 'rgba(255,255,255,0.2)', color: 'rgba(255,255,255,0.7)' }}>Our services</Link>
           </div>
         </div>
       </div>

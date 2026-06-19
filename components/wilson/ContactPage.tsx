@@ -107,7 +107,7 @@ export default function ContactPage() {
                 <div className="w-field">
                   <label className="w-field-label">What brings you here?</label>
                   <div className="w-pill-group" style={{ marginTop: 6, marginBottom: 8 }}>
-                    {['Career coaching', 'Recruiting', 'Corporate consulting', 'The Collective', 'Something else'].map(s => (
+                    {['Career coaching', 'Recruiting', 'Corporate consulting', 'Something else'].map(s => (
                       <button
                         key={s}
                         type="button"

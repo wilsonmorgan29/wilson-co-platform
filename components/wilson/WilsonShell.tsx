@@ -9,13 +9,12 @@ export default function WilsonShell({ children }: { children: React.ReactNode })
   const [mobileOpen, setMobileOpen] = useState(false)
 
   const navLinks = [
-    { href: '/',           label: 'Home'           },
-    { href: '/about',      label: 'About'          },
-    { href: '/services',   label: 'Services'       },
-    { href: '/collective', label: 'The Collective' },
-    { href: '/pricing',    label: 'Pricing'        },
-    { href: '/press',      label: 'Press'          },
-    { href: '/contact',    label: 'Contact'        },
+    { href: '/',         label: 'Home'     },
+    { href: '/about',    label: 'About'    },
+    { href: '/services', label: 'Services' },
+    { href: '/pricing',  label: 'Pricing'  },
+    { href: '/press',    label: 'Press'    },
+    { href: '/contact',  label: 'Contact'  },
   ]
 
   const isActive = (href: string) => {
@@ -29,7 +28,6 @@ export default function WilsonShell({ children }: { children: React.ReactNode })
       <div className="w-topbar">
         <span className="w-topbar-text">
           Clarity <span>·</span> Confidence <span>·</span> Purpose
-          <span>·</span> New York City · Nationwide
         </span>
       </div>
 
@@ -37,7 +35,7 @@ export default function WilsonShell({ children }: { children: React.ReactNode })
       <nav className="w-nav">
         <Link href="/" className="w-nav-logo">
           <div className="w-nav-logo-main">The Wilson Co.</div>
-          <div className="w-nav-logo-sub">Career Coaching · Talent Collective</div>
+          <div className="w-nav-logo-sub">Career Coaching · Corporate Consulting · Recruiting</div>
         </Link>
 
         <div className={`w-nav-links${mobileOpen ? ' open' : ''}`}>
@@ -80,7 +78,7 @@ export default function WilsonShell({ children }: { children: React.ReactNode })
           <div>
             <div className="w-footer-logo">The Wilson Co.</div>
             <div style={{ fontSize: 9, letterSpacing: '0.16em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.25)', marginTop: 4 }}>
-              Career Coaching · Talent Collective
+              Career Coaching · Corporate Consulting · Recruiting
             </div>
             <div style={{ display: 'flex', gap: 14, marginTop: 12 }}>
               <a href="https://www.instagram.com/thewilson.co" target="_blank" rel="noopener noreferrer" style={{ fontSize: 10, color: 'var(--oak-light)', letterSpacing: '0.08em', textDecoration: 'none' }}>Instagram</a>
