@@ -20,7 +20,8 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${inter.variable} ${kumbhSans.variable}`}>
-      <head>
+      <body className="font-sans antialiased">
+        {children}
         <Script src="https://www.googletagmanager.com/gtag/js?id=G-9CYXR5QHEC" strategy="afterInteractive" />
         <Script id="ga4-init" strategy="afterInteractive">{`
           window.dataLayer = window.dataLayer || [];
@@ -28,8 +29,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           gtag('js', new Date());
           gtag('config', 'G-9CYXR5QHEC');
         `}</Script>
-      </head>
-      <body className="font-sans antialiased">{children}</body>
+      </body>
     </html>
   )
 }
