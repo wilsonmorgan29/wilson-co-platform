@@ -23,7 +23,14 @@ export default function ContactPage() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ name, email, subject, message }),
       })
-      setStatus(res.ok ? 'sent' : 'error')
+      if (res.ok) {
+        setStatus('sent')
+        if (typeof window !== 'undefined' && typeof (window as any).gtag === 'function') {
+          ;(window as any).gtag('event', 'ads_conversion_SUBMIT_LEAD_FORM_1')
+        }
+      } else {
+        setStatus('error')
+      }
     } catch {
       setStatus('error')
     }
