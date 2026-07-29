@@ -5,22 +5,22 @@ import Image from 'next/image'
 
 const SERVICES = [
   {
-    label: 'Recruiting',
-    badge: 'w-badge-denim',
-    body: 'Proactive, relationship-driven recruiting for companies that are serious about who they hire. We don\'t post and pray — we find the right person, build the relationship, and make the introduction.',
-    href: '/services#recruiting',
-  },
-  {
     label: 'Career Coaching',
     badge: 'w-badge-oak',
-    body: '1:1 coaching for senior professionals navigating transitions. We help you get clear on what you actually want, move strategically, and land somewhere you\'re proud of.',
+    body: '1:1 coaching for professionals navigating transitions, pivots, or their next big move. We help you get clear on what you actually want, build a real plan, and move with intention. Based in NYC, available nationwide.',
     href: '/services#coaching',
   },
   {
     label: 'Corporate Consulting',
     badge: 'w-badge-hyd',
-    body: 'Working with leadership teams to build better hiring practices, improve how they treat candidates, and retain the people they already have.',
+    body: 'Working with leadership teams to sharpen hiring practices, improve how they treat candidates, and retain the people they already have. NYC-based, serving organizations nationwide.',
     href: '/services#consulting',
+  },
+  {
+    label: 'Workshops',
+    badge: 'w-badge-denim',
+    body: 'Group workshops on interview skills, networking, professionalism, and career development — tailored for conferences, corporate teams, summits, and companies. Booking now.',
+    href: '/workshops',
   },
 ]
 
@@ -32,7 +32,7 @@ export default function HomePage() {
         <div style={{ display: 'grid', gridTemplateColumns: '1fr auto', gap: 48, alignItems: 'center' }}>
           <div>
             <div className="w-eyebrow" style={{ marginBottom: 18 }}>
-              Career Coaching · Corporate Consulting · Recruiting
+              Career Coaching · Corporate Consulting · Workshops
             </div>
             <h1 className="w-display" style={{ fontSize: 'clamp(28px, 4.5vw, 48px)', marginBottom: 20, maxWidth: 560 }}>
               Empowering people and organizations to grow with <em>clarity, confidence, and purpose.</em>

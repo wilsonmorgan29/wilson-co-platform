@@ -2,17 +2,6 @@ import Link from 'next/link'
 
 const SERVICES = [
   {
-    id: 'recruiting',
-    badge: 'w-badge-denim',
-    label: 'Recruiting',
-    headline: 'Find the right person. Not just the available one.',
-    body: [
-      'Most recruiting looks the same: post a job, collect résumés, screen, repeat. It\'s built for volume, not quality. The people who are actually right for a role are often the ones who never saw the posting — because they\'re not actively looking, or they\'ve learned that applying through job boards rarely goes anywhere.',
-      'We work differently. Every search starts with a deep conversation about what you actually need — the role, yes, but also the culture, the leadership, the trajectory. Then we go find the person, not wait for them to find you. Proactive outreach, real relationship-building, and honest assessments before we ever make an introduction.',
-    ],
-    details: ['Mid-level to senior leadership placements', 'Direct hire and retained search', 'Legal, legal services, financial services, private equity, and startups', 'Based in NYC · working nationwide'],
-  },
-  {
     id: 'coaching',
     badge: 'w-badge-oak',
     label: 'Career Coaching',
@@ -21,18 +10,18 @@ const SERVICES = [
       'Most people who come to us for coaching don\'t lack ambition — they lack clarity. They know what they\'ve outgrown. They have a general sense of what they want. But they haven\'t had a real conversation with someone who can help them articulate it, pressure-test it, and build a real plan around it.',
       'Career coaching at The Wilson Co. is personal and practical. We start with where you actually are — not where your LinkedIn says you are — and build from there. No frameworks for the sake of frameworks. No generic advice. Just honest conversation and real accountability.',
     ],
-    details: ['1:1 engagement — not group sessions', 'Career transition and pivot support', 'Mid-level to senior professionals in legal, finance, PE, and startups', 'Available virtually, nationwide'],
+    details: ['1:1 engagement — not group sessions', 'Career transition, pivot, and advancement support', 'Mid-level to senior professionals across industries', 'Based in NYC · available virtually, nationwide'],
   },
   {
     id: 'consulting',
     badge: 'w-badge-hyd',
     label: 'Corporate Consulting',
-    headline: 'Build a hiring culture worth working for.',
+    headline: 'Build a culture people actually want to work in.',
     body: [
-      'Companies spend millions on recruiting and almost nothing on understanding why their process frustrates candidates, drives away good people, and produces hires that don\'t stick. The answer is usually not a new ATS or a better job description template — it\'s a clearer picture of what they\'re actually looking for and a process that respects the gravity of the decision.',
-      'We work with leadership teams and HR to diagnose what\'s broken, build processes that work, and create candidate experiences that reflect well on the organization — regardless of outcome. Because how you treat someone who doesn\'t get the job matters.',
+      'Companies spend enormous energy on hiring and almost none on understanding why their process frustrates candidates, drives away good people, and produces hires that don\'t stick. The answer is rarely a new tool or template — it\'s a clearer picture of what they\'re actually looking for and a process that respects the gravity of the decision.',
+      'We work with leadership teams and HR to diagnose what\'s broken, build processes that work, and create candidate and employee experiences that reflect well on the organization. Because how you treat people — whether they get the job or not — defines your culture.',
     ],
-    details: ['Hiring process audit and redesign', 'Candidate experience strategy', 'Retention and culture assessment', 'Leadership team alignment on hiring criteria'],
+    details: ['Hiring process audit and redesign', 'Candidate and employee experience strategy', 'Retention and culture assessment', 'Leadership alignment on talent and values', 'Based in NYC · serving organizations nationwide'],
   },
 ]
 
@@ -43,11 +32,13 @@ export default function ServicesPage() {
       <div className="w-hero" style={{ paddingBottom: 56 }}>
         <p className="w-eyebrow" style={{ marginBottom: 16 }}>What we do</p>
         <h1 className="w-display" style={{ fontSize: 'clamp(28px, 4vw, 44px)', marginBottom: 20, maxWidth: 560 }}>
-          Three ways to work <em>with us.</em>
+          Two ways to work <em>with us.</em>
         </h1>
         <p className="w-hero-sub">
-          Recruiting, career coaching, and corporate consulting — each one built around the same belief:
-          that the right match, made the right way, changes everything.
+          Career coaching and corporate consulting — both rooted in the same belief that clarity, intentionality,
+          and the right relationship make all the difference. Based in New York City, serving clients nationwide.
+          Looking for group workshops?{' '}
+          <Link href="/workshops" style={{ color: 'var(--oak)', textDecoration: 'none', fontWeight: 500 }}>See our workshops →</Link>
         </p>
       </div>
 
