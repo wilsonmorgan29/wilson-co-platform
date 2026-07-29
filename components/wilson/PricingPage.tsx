@@ -9,8 +9,8 @@ export default function PricingPage() {
         <p className="w-eyebrow" style={{ marginBottom: 0 }}>Transparent pricing</p>
         <h1 className="w-display" style={{ fontSize: 36, marginTop: 14, marginBottom: 10 }}>Simple, <em>honest</em> pricing.</h1>
         <p className="w-hero-sub">
-          Career coaching and consulting start at $300. Recruiting pricing is discussed based on your needs.
-          No surprises — what you see is what you pay.
+          Career coaching and consulting start at $300. Workshop pricing is tailored to your event and scope —
+          reach out and we&apos;ll figure it out together. No surprises — what you see is what you pay.
         </p>
       </div>
 
@@ -100,35 +100,27 @@ export default function PricingPage() {
 
         <div className="w-divider" style={{ margin: '24px 0' }} />
 
-        {/* Recruiting */}
-        <p className="w-eyebrow" style={{ marginBottom: 6 }}>Recruiting</p>
+        {/* Workshops */}
+        <p className="w-eyebrow" style={{ marginBottom: 6 }}>Workshops</p>
         <p style={{ fontSize: 12, fontWeight: 300, color: 'var(--ink-3)', marginBottom: 16, lineHeight: 1.6 }}>
-          Proactive, relationship-driven recruiting for companies serious about who they hire.
-          Pricing is discussed based on your needs — whether you're filling a single role or looking for an ongoing partner.
+          Group workshops on interview skills, networking, executive presence, and career strategy —
+          for conferences, corporate teams, summits, and ERGs. Pricing depends on format, audience size,
+          and scope. Reach out and we&apos;ll build a custom quote together.
         </p>
-        <div className="w-grid-2" style={{ marginBottom: 32 }}>
-          <div className="w-tier-card">
-            <span className="w-badge w-badge-denim" style={{ marginBottom: 10, display: 'inline-block' }}>Single placement</span>
-            <div className="w-tier-price" style={{ fontSize: 22, paddingTop: 4 }}>Pricing discussed</div>
-            <div className="w-tier-per">per role</div>
-            {['Proactive candidate sourcing', 'Relationship-driven search', 'Human-reviewed candidates only', 'Offer + negotiation support'].map(line => (
-              <div key={line} className="w-tier-line"><div className="w-tier-dot" /><div>{line}</div></div>
-            ))}
-            <div className="w-btn-row">
-              <Link href="/contact" className="w-btn w-btn-outline">Get in touch →</Link>
-            </div>
-          </div>
-
-          <div className="w-tier-card" style={{ border: '2px solid var(--oak)' }}>
-            <span className="w-badge w-badge-oak" style={{ marginBottom: 10, display: 'inline-block' }}>Retainer</span>
-            <div className="w-tier-price" style={{ fontSize: 22, paddingTop: 4 }}>Pricing discussed</div>
-            <div className="w-tier-per">ongoing partnership</div>
-            {['Dedicated search support', 'Multiple roles over time', 'Priority candidate access', 'Ongoing strategy + accountability'].map(line => (
-              <div key={line} className="w-tier-line"><div className="w-tier-dot" /><div>{line}</div></div>
-            ))}
-            <div className="w-btn-row">
-              <Link href="/contact" className="w-btn w-btn-oak">Let&apos;s talk →</Link>
-            </div>
+        <div className="w-tier-card" style={{ marginBottom: 32, maxWidth: 560 }}>
+          <span className="w-badge w-badge-denim" style={{ marginBottom: 10, display: 'inline-block' }}>Custom pricing</span>
+          <div className="w-tier-price" style={{ fontSize: 22, paddingTop: 4 }}>Let&apos;s talk</div>
+          <div className="w-tier-per">tailored to your event + scope</div>
+          {[
+            'Interview skills, networking, executive presence, career strategy',
+            'Half-day, full-day, or keynote formats',
+            'Conferences, corporate teams, ERGs, universities',
+            'NYC-based · available nationwide',
+          ].map(line => (
+            <div key={line} className="w-tier-line"><div className="w-tier-dot" /><div>{line}</div></div>
+          ))}
+          <div className="w-btn-row">
+            <Link href="/contact?subject=Workshop+inquiry" className="w-btn w-btn-oak">Get a quote →</Link>
           </div>
         </div>
 
