@@ -7,6 +7,14 @@ export default function ProposalPage() {
   const params = useSearchParams()
   const client = params.get('client') || 'Your Name'
   const date = params.get('date') || new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })
+  const discountPct = parseFloat(params.get('discount') || '0')
+  const hasDiscount = discountPct > 0
+
+  const applyDiscount = (price: number) => Math.round(price * (1 - discountPct / 100))
+  const price3 = 825
+  const price6 = 1500
+  const disc3 = applyDiscount(price3)
+  const disc6 = applyDiscount(price6)
 
   return (
     <>
@@ -34,9 +42,11 @@ export default function ProposalPage() {
         .p-card.featured .p-card-tag { color: rgba(255,255,255,0.65); }
         .p-card-name { font-family: Georgia, serif; font-size: 24px; font-style: italic; font-weight: normal; color: #fff; line-height: 1.2; margin-bottom: 6px; }
         .p-card-sub { font-size: 11px; color: rgba(255,255,255,0.55); }
-        .p-price-row { display: flex; align-items: baseline; gap: 8px; margin: 18px 0 6px; }
+        .p-price-row { display: flex; align-items: baseline; gap: 8px; margin: 18px 0 6px; flex-wrap: wrap; }
         .p-price { font-family: Georgia, serif; font-size: 36px; font-style: italic; color: #fff; line-height: 1; }
         .p-price-note { font-size: 11px; color: rgba(255,255,255,0.5); }
+        .p-price-orig { font-family: Georgia, serif; font-size: 18px; font-style: italic; color: rgba(255,255,255,0.35); text-decoration: line-through; line-height: 1; }
+        .p-discount-badge { display: inline-block; background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.3); border-radius: 3px; font-size: 9px; letter-spacing: 0.14em; text-transform: uppercase; color: #fff; padding: 3px 8px; margin-bottom: 8px; }
         .p-card-body { padding: 22px 24px 26px; }
         .p-line { display: flex; gap: 10px; align-items: flex-start; padding: 7px 0; border-bottom: 1px solid #D7DEE2; font-size: 13px; color: #3d4f59; line-height: 1.5; }
         .p-line:last-child { border-bottom: none; }
@@ -101,9 +111,11 @@ export default function ProposalPage() {
                 <p className="p-card-tag">Focused sprint</p>
                 <p className="p-card-name">3 Sessions</p>
                 <p className="p-card-sub">Ideal for a defined challenge or decision</p>
+                {hasDiscount && <p className="p-discount-badge">{discountPct}% friends &amp; family rate</p>}
                 <div className="p-price-row">
-                  <span className="p-price">$825</span>
-                  <span className="p-price-note">$275 / session</span>
+                  {hasDiscount && <span className="p-price-orig">${price3}</span>}
+                  <span className="p-price">${disc3}</span>
+                  <span className="p-price-note">${Math.round(disc3 / 3)} / session</span>
                 </div>
               </div>
               <div className="p-card-body">
@@ -118,9 +130,11 @@ export default function ProposalPage() {
                 <p className="p-card-tag">Most popular</p>
                 <p className="p-card-name">6 Sessions</p>
                 <p className="p-card-sub">Best for real, lasting momentum</p>
+                {hasDiscount && <p className="p-discount-badge">{discountPct}% friends &amp; family rate</p>}
                 <div className="p-price-row">
-                  <span className="p-price">$1,500</span>
-                  <span className="p-price-note">$250 / session</span>
+                  {hasDiscount && <span className="p-price-orig">${price6.toLocaleString()}</span>}
+                  <span className="p-price">${disc6.toLocaleString()}</span>
+                  <span className="p-price-note">${Math.round(disc6 / 6)} / session</span>
                 </div>
               </div>
               <div className="p-card-body">
