@@ -11,8 +11,8 @@ export default function ProposalPage() {
   const hasDiscount = discountPct > 0
 
   const applyDiscount = (price: number) => Math.round(price * (1 - discountPct / 100))
-  const price3 = 825
-  const price6 = 1500
+  const price3 = 900
+  const price6 = 1650
   const disc3 = applyDiscount(price3)
   const disc6 = applyDiscount(price6)
 
