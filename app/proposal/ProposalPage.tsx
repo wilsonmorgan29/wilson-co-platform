@@ -98,8 +98,12 @@ export default function ProposalPage() {
             Thank you for taking the time to connect. This proposal outlines two engagement options for 1:1 coaching — a focused 3-session sprint and a deeper 6-session engagement — both designed around your specific goals and current moment.
           </p>
           <p>
-            Every session is 60 minutes, held by video or in person if you&apos;re based in New York City. The work is practical, honest, and tailored entirely to you.
+            Every session is 60 minutes, held by video or in person if you&apos;re based in New York City.
           </p>
+          <p style="margin-top: 18px; font-size: 14px; color: #3d4f59; font-style: italic; line-height: 1.8;">
+            I&apos;m really looking forward to working together — I know how much this next chapter means to you and I&apos;m here for all of it. Let&apos;s do this.
+          </p>
+          <p style="margin-top: 10px; font-size: 13px; color: #2E4E61; letter-spacing: 0.03em;">— Morgan</p>
         </div>
 
         <div className="p-section">
