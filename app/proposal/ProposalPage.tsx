@@ -93,18 +93,6 @@ export default function ProposalPage() {
           </div>
         </div>
 
-        <div className="p-intro">
-          <p>
-            Thank you for taking the time to connect. This proposal outlines two engagement options for 1:1 coaching — a focused 3-session sprint and a deeper 6-session engagement — both designed around your specific goals and current moment.
-          </p>
-          <p>
-            Every session is 60 minutes, held by video or in person if you&apos;re based in New York City.
-          </p>
-          <p style={{ marginTop: 18, fontSize: 14, color: '#3d4f59', fontStyle: 'italic', lineHeight: 1.8 }}>
-            I&apos;m really looking forward to working together! Please let me know if you have any questions regarding the below or the intake form.
-          </p>
-          <p style={{ marginTop: 10, fontSize: 13, color: '#2E4E61', letterSpacing: '0.03em' }}>All the best, Morgan</p>
-        </div>
 
         <div className="p-section">
           <p className="p-eyebrow">Your options</p>
