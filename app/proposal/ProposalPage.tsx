@@ -100,10 +100,10 @@ export default function ProposalPage() {
           <p>
             Every session is 60 minutes, held by video or in person if you&apos;re based in New York City.
           </p>
-          <p style="margin-top: 18px; font-size: 14px; color: #3d4f59; font-style: italic; line-height: 1.8;">
+          <p style={{ marginTop: 18, fontSize: 14, color: '#3d4f59', fontStyle: 'italic', lineHeight: 1.8 }}>
             I&apos;m really looking forward to working together! Please let me know if you have any questions regarding the below or the intake form.
           </p>
-          <p style="margin-top: 10px; font-size: 13px; color: #2E4E61; letter-spacing: 0.03em;">All the best, Morgan</p>
+          <p style={{ marginTop: 10, fontSize: 13, color: '#2E4E61', letterSpacing: '0.03em' }}>All the best, Morgan</p>
         </div>
 
         <div className="p-section">
