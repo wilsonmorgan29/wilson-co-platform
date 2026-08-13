@@ -17,6 +17,12 @@ const SERVICES = [
     href: '/services#consulting',
   },
   {
+    label: 'Recruiting',
+    badge: 'w-badge-gold',
+    body: 'Retained and contingency search for senior and specialized roles. We partner with companies in legal, financial services, private equity, and startups to find the people worth finding. NYC-based, serving organizations nationwide.',
+    href: '/services#recruiting',
+  },
+  {
     label: 'Workshops',
     badge: 'w-badge-denim',
     body: 'Group workshops on interview skills, networking, professionalism, and career development — tailored for conferences, corporate teams, summits, and companies. Booking now.',
@@ -32,7 +38,7 @@ export default function HomePage() {
         <div style={{ display: 'grid', gridTemplateColumns: '1fr auto', gap: 48, alignItems: 'center' }}>
           <div>
             <div className="w-eyebrow" style={{ marginBottom: 18 }}>
-              Career Coaching · Corporate Consulting · Workshops
+              Career Coaching · Recruiting · Corporate Consulting · Workshops
             </div>
             <h1 className="w-display" style={{ fontSize: 'clamp(28px, 4.5vw, 48px)', marginBottom: 20, maxWidth: 560 }}>
               Empowering people and organizations to grow with <em>clarity, confidence, and purpose.</em>

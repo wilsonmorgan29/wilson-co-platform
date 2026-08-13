@@ -36,7 +36,7 @@ export default function WilsonShell({ children }: { children: React.ReactNode })
       <nav className="w-nav">
         <Link href="/" className="w-nav-logo">
           <div className="w-nav-logo-main">The Wilson Co.</div>
-          <div className="w-nav-logo-sub">Career Coaching · Corporate Consulting · Workshops</div>
+          <div className="w-nav-logo-sub">Career Coaching · Recruiting · Corporate Consulting · Workshops</div>
         </Link>
 
         <div className={`w-nav-links${mobileOpen ? ' open' : ''}`}>

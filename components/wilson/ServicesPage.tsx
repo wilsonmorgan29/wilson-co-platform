@@ -13,6 +13,17 @@ const SERVICES = [
     details: ['1:1 engagement — not group sessions', 'Career transition, pivot, and advancement support', 'Mid-level to senior professionals across industries', 'Based in NYC · available virtually, nationwide'],
   },
   {
+    id: 'recruiting',
+    badge: 'w-badge-gold',
+    label: 'Recruiting',
+    headline: 'Find the right people. Build the right team.',
+    body: [
+      'Great hiring doesn\'t happen by accident. It requires clarity on what you\'re actually looking for, a process that surfaces the right candidates, and the judgment to know the difference between a good résumé and a great hire. That\'s where we come in.',
+      'We partner with companies to lead searches end-to-end — from defining the role and building the candidate pipeline to managing the process and closing the right person. Senior, specialized, and relationship-driven. We don\'t flood inboxes. We find the people worth finding.',
+    ],
+    details: ['Retained and contingency search', 'Senior and specialized roles', 'Legal, financial services, private equity, and startups', 'Full search management — sourcing through close', 'Based in NYC · serving organizations nationwide'],
+  },
+  {
     id: 'consulting',
     badge: 'w-badge-hyd',
     label: 'Corporate Consulting',
@@ -32,12 +43,12 @@ export default function ServicesPage() {
       <div className="w-hero" style={{ paddingBottom: 56 }}>
         <p className="w-eyebrow" style={{ marginBottom: 16 }}>What we do</p>
         <h1 className="w-display" style={{ fontSize: 'clamp(28px, 4vw, 44px)', marginBottom: 20, maxWidth: 560 }}>
-          Two ways to work <em>with us.</em>
+          Three ways to work <em>with us.</em>
         </h1>
         <p className="w-hero-sub">
-          Career coaching and corporate consulting — both rooted in the same belief that clarity, intentionality,
-          and the right relationship make all the difference. Based in New York City, serving clients nationwide.
-          Looking for group workshops?{' '}
+          Career coaching, recruiting, and corporate consulting — all rooted in the same belief that clarity,
+          intentionality, and the right relationship make all the difference. Based in New York City, serving
+          clients nationwide. Looking for group workshops?{' '}
           <Link href="/workshops" style={{ color: 'var(--oak)', textDecoration: 'none', fontWeight: 500 }}>See our workshops →</Link>
         </p>
       </div>

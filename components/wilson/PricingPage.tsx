@@ -62,6 +62,40 @@ export default function PricingPage() {
 
         <div className="w-divider" style={{ margin: '24px 0' }} />
 
+        {/* Recruiting */}
+        <p className="w-eyebrow" style={{ marginBottom: 6 }}>Recruiting</p>
+        <p style={{ fontSize: 12, fontWeight: 300, color: 'var(--ink-3)', marginBottom: 16, lineHeight: 1.6 }}>
+          Retained and contingency search for senior and specialized roles. Pricing is scoped per engagement
+          based on role level, timeline, and complexity.
+        </p>
+        <div className="w-grid-2" style={{ marginBottom: 12 }}>
+          <div className="w-tier-card">
+            <span className="w-badge w-badge-gold" style={{ marginBottom: 10, display: 'inline-block' }}>Single placement</span>
+            <div className="w-tier-price" style={{ fontSize: 22, paddingTop: 4 }}>By scope</div>
+            <div className="w-tier-per">contingency or retained</div>
+            {['Senior and specialized roles', 'Legal, finance, PE, and startups', 'Full search management — sourcing through close', 'Fee structured as % of first-year comp'].map(line => (
+              <div key={line} className="w-tier-line"><div className="w-tier-dot" /><div>{line}</div></div>
+            ))}
+            <div className="w-btn-row">
+              <Link href="/contact?subject=Recruiting" className="w-btn w-btn-outline">Get in touch →</Link>
+            </div>
+          </div>
+
+          <div className="w-tier-card" style={{ border: '2px solid var(--oak)' }}>
+            <span className="w-badge w-badge-oak" style={{ marginBottom: 10, display: 'inline-block' }}>Retainer search</span>
+            <div className="w-tier-price" style={{ fontSize: 22, paddingTop: 4 }}>By scope</div>
+            <div className="w-tier-per">ongoing search partnership</div>
+            {['Multiple or ongoing roles', 'Dedicated search support', 'Priority pipeline and sourcing', 'Best for companies hiring consistently'].map(line => (
+              <div key={line} className="w-tier-line"><div className="w-tier-dot" /><div>{line}</div></div>
+            ))}
+            <div className="w-btn-row">
+              <Link href="/contact?subject=Recruiting" className="w-btn w-btn-oak">Discuss scope →</Link>
+            </div>
+          </div>
+        </div>
+
+        <div className="w-divider" style={{ margin: '24px 0' }} />
+
         {/* Corporate Consulting */}
         <p className="w-eyebrow" style={{ marginBottom: 6 }}>Corporate consulting</p>
         <p style={{ fontSize: 12, fontWeight: 300, color: 'var(--ink-3)', marginBottom: 16, lineHeight: 1.6 }}>
