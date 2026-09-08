@@ -5,6 +5,12 @@ import Image from 'next/image'
 
 const SERVICES = [
   {
+    label: 'Recruiting',
+    badge: 'w-badge-gold',
+    body: 'Retained and contingency search for People, Talent Acquisition, HR, and Operations roles — HRBP through CHRO, in any industry. 15% fee vs. a 20–25% market average. 90-day replacement guarantee. NYC-based, serving organizations nationwide.',
+    href: '/services#recruiting',
+  },
+  {
     label: 'Career Coaching',
     badge: 'w-badge-oak',
     body: '1:1 coaching for professionals navigating transitions, pivots, or their next big move. We help you get clear on what you actually want, build a real plan, and move with intention. Based in NYC, available nationwide.',
@@ -15,12 +21,6 @@ const SERVICES = [
     badge: 'w-badge-hyd',
     body: 'Working with leadership teams to sharpen hiring practices, improve how they treat candidates, and retain the people they already have. NYC-based, serving organizations nationwide.',
     href: '/services#consulting',
-  },
-  {
-    label: 'Recruiting',
-    badge: 'w-badge-gold',
-    body: 'Retained and contingency search for senior and specialized roles. We partner with companies in legal, financial services, private equity, and startups to find the people worth finding. NYC-based, serving organizations nationwide.',
-    href: '/services#recruiting',
   },
   {
     label: 'Workshops',
@@ -38,15 +38,14 @@ export default function HomePage() {
         <div style={{ display: 'grid', gridTemplateColumns: '1fr auto', gap: 48, alignItems: 'center' }}>
           <div>
             <div className="w-eyebrow" style={{ marginBottom: 18 }}>
-              Career Coaching · Recruiting · Corporate Consulting · Workshops
+              Recruiting · Career Coaching · Corporate Consulting · Workshops
             </div>
             <h1 className="w-display" style={{ fontSize: 'clamp(28px, 4.5vw, 48px)', marginBottom: 20, maxWidth: 560 }}>
-              Empowering people and organizations to grow with <em>clarity, confidence, and purpose.</em>
+              People built this company. I place the people who <em>protect that.</em>
             </h1>
             <p className="w-hero-sub">
-              The Wilson Co. works with mid-level to senior professionals — primarily in legal, financial services,
-              private equity, and startups — and the companies looking to hire them. Built on real relationships
-              and ten years of knowing what both sides actually need.
+              The Wilson Co. is a recruiting practice for People, Talent Acquisition, HR, and Operations roles —
+              built by someone who&apos;s held the seat, not just filled it. Based in New York City, serving clients nationwide.
             </p>
             <div className="w-hero-actions">
               <Link href="/services" className="w-btn w-btn-oak">Our services →</Link>

@@ -79,7 +79,7 @@ export default function WilsonShell({ children }: { children: React.ReactNode })
           <div>
             <div className="w-footer-logo">The Wilson Co.</div>
             <div style={{ fontSize: 9, letterSpacing: '0.16em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.25)', marginTop: 4 }}>
-              Career Coaching · Corporate Consulting · Workshops
+              Recruiting · Career Coaching · Corporate Consulting · Workshops
             </div>
             <div style={{ display: 'flex', gap: 14, marginTop: 12 }}>
               <a href="https://www.instagram.com/thewilson.co" target="_blank" rel="noopener noreferrer" style={{ fontSize: 10, color: 'var(--oak-light)', letterSpacing: '0.08em', textDecoration: 'none' }}>Instagram</a>

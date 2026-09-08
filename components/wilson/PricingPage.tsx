@@ -64,16 +64,31 @@ export default function PricingPage() {
 
         {/* Recruiting */}
         <p className="w-eyebrow" style={{ marginBottom: 6 }}>Recruiting</p>
-        <p style={{ fontSize: 12, fontWeight: 300, color: 'var(--ink-3)', marginBottom: 16, lineHeight: 1.6 }}>
-          Retained and contingency search for senior and specialized roles. Pricing is scoped per engagement
-          based on role level, timeline, and complexity.
+        <p style={{ fontSize: 12, fontWeight: 300, color: 'var(--ink-3)', marginBottom: 8, lineHeight: 1.6 }}>
+          Retained and contingency search for People, Talent Acquisition, HR, and Operations roles — HRBP through CHRO, any industry. Pricing is scoped per engagement based on role level, timeline, and complexity.
         </p>
+        <div style={{ display: 'flex', gap: 16, marginBottom: 16, flexWrap: 'wrap' }}>
+          <div style={{ background: 'var(--w-bg-alt)', border: '1px solid var(--w-border)', borderRadius: 'var(--w-radius)', padding: '10px 16px', display: 'flex', alignItems: 'center', gap: 8 }}>
+            <span style={{ fontSize: 16, color: 'var(--oak)' }}>✓</span>
+            <div>
+              <div style={{ fontSize: 11, fontWeight: 600, color: 'var(--ink-1)', letterSpacing: '0.02em' }}>15% fee</div>
+              <div style={{ fontSize: 10, color: 'var(--ink-3)', fontWeight: 300 }}>vs. 20–25% market average</div>
+            </div>
+          </div>
+          <div style={{ background: 'var(--w-bg-alt)', border: '1px solid var(--w-border)', borderRadius: 'var(--w-radius)', padding: '10px 16px', display: 'flex', alignItems: 'center', gap: 8 }}>
+            <span style={{ fontSize: 16, color: 'var(--oak)' }}>✓</span>
+            <div>
+              <div style={{ fontSize: 11, fontWeight: 600, color: 'var(--ink-1)', letterSpacing: '0.02em' }}>90-day guarantee</div>
+              <div style={{ fontSize: 10, color: 'var(--ink-3)', fontWeight: 300 }}>replacement search at no additional fee</div>
+            </div>
+          </div>
+        </div>
         <div className="w-grid-2" style={{ marginBottom: 12 }}>
           <div className="w-tier-card">
             <span className="w-badge w-badge-gold" style={{ marginBottom: 10, display: 'inline-block' }}>Single placement</span>
             <div className="w-tier-price" style={{ fontSize: 22, paddingTop: 4 }}>By scope</div>
             <div className="w-tier-per">contingency or retained</div>
-            {['Senior and specialized roles', 'Legal, finance, PE, and startups', 'Full search management — sourcing through close', 'Fee structured as % of first-year comp'].map(line => (
+            {['People, TA, HR & Operations roles', 'HRBP through CHRO · any industry', 'Full search management — sourcing through close', 'Fee structured as % of first-year comp'].map(line => (
               <div key={line} className="w-tier-line"><div className="w-tier-dot" /><div>{line}</div></div>
             ))}
             <div className="w-btn-row">

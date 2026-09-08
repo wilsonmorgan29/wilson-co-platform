@@ -2,6 +2,17 @@ import Link from 'next/link'
 
 const SERVICES = [
   {
+    id: 'recruiting',
+    badge: 'w-badge-gold',
+    label: 'Recruiting',
+    headline: 'Hire the people who build the people function.',
+    body: [
+      'People, Talent Acquisition, HR, and Operations are the function every other function depends on — and the one most companies hire worst. We specialize in placing these professionals, from individual contributors through CHRO, in any industry. Not because it\'s a niche, but because it\'s the seat that decides who gets hired, who stays, and whether the culture holds while the company scales.',
+      'We lead searches end-to-end: defining the role, building the pipeline, managing the process, and closing the right person. Senior, specialized, and relationship-driven. 15% fee versus the 20–25% market average, with a 90-day replacement guarantee. We don\'t flood inboxes. We find the people worth finding.',
+    ],
+    details: ['People, TA, HR & Operations roles · any industry', 'HRBP through CHRO — IC through executive', 'Retained and contingency search', '15% fee vs. 20–25% market average', '90-day replacement guarantee', 'Full search management — sourcing through close', 'Based in NYC · serving organizations nationwide'],
+  },
+  {
     id: 'coaching',
     badge: 'w-badge-oak',
     label: 'Career Coaching',
@@ -11,17 +22,6 @@ const SERVICES = [
       'Career coaching at The Wilson Co. is personal and practical. We start with where you actually are — not where your LinkedIn says you are — and build from there. No frameworks for the sake of frameworks. No generic advice. Just honest conversation and real accountability.',
     ],
     details: ['1:1 engagement — not group sessions', 'Career transition, pivot, and advancement support', 'Mid-level to senior professionals across industries', 'Based in NYC · available virtually, nationwide'],
-  },
-  {
-    id: 'recruiting',
-    badge: 'w-badge-gold',
-    label: 'Recruiting',
-    headline: 'Find the right people. Build the right team.',
-    body: [
-      'Great hiring doesn\'t happen by accident. It requires clarity on what you\'re actually looking for, a process that surfaces the right candidates, and the judgment to know the difference between a good résumé and a great hire. That\'s where we come in.',
-      'We partner with companies to lead searches end-to-end — from defining the role and building the candidate pipeline to managing the process and closing the right person. Senior, specialized, and relationship-driven. We don\'t flood inboxes. We find the people worth finding.',
-    ],
-    details: ['Retained and contingency search', 'Senior and specialized roles', 'Legal, financial services, private equity, and startups', 'Full search management — sourcing through close', 'Based in NYC · serving organizations nationwide'],
   },
   {
     id: 'consulting',
@@ -46,9 +46,9 @@ export default function ServicesPage() {
           Three ways to work <em>with us.</em>
         </h1>
         <p className="w-hero-sub">
-          Career coaching, recruiting, and corporate consulting — all rooted in the same belief that clarity,
-          intentionality, and the right relationship make all the difference. Based in New York City, serving
-          clients nationwide. Looking for group workshops?{' '}
+          Recruiting for People, Talent, HR, and Operations roles. Career coaching for professionals navigating their next move.
+          Corporate consulting for teams that want to hire and retain better. All rooted in real experience on both sides of the table.
+          Based in New York City, serving clients nationwide. Looking for group workshops?{' '}
           <Link href="/workshops" style={{ color: 'var(--oak)', textDecoration: 'none', fontWeight: 500 }}>See our workshops →</Link>
         </p>
       </div>
