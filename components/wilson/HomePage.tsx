@@ -3,30 +3,18 @@
 import Link from 'next/link'
 import Image from 'next/image'
 
-const SERVICES = [
+const OFFERINGS = [
   {
-    label: 'Recruiting',
+    label: 'For Companies',
     badge: 'w-badge-gold',
-    body: 'Retained and contingency search for People, Talent Acquisition, HR, and Operations roles — HRBP through CHRO, in any industry. 15% fee vs. a 20–25% market average. 90-day replacement guarantee. NYC-based, serving organizations nationwide.',
-    href: '/services#recruiting',
+    body: 'Retained and contingency search for People, Talent Acquisition, HR, and Operations roles — HRBP through CHRO, in any industry. 20% fee vs. a 25–30% market average. 90-day replacement guarantee.',
+    href: '/for-companies',
   },
   {
-    label: 'Career Coaching',
+    label: 'For Candidates',
     badge: 'w-badge-oak',
-    body: '1:1 coaching for professionals navigating transitions, pivots, or their next big move. We help you get clear on what you actually want, build a real plan, and move with intention. Based in NYC, available nationwide.',
-    href: '/services#coaching',
-  },
-  {
-    label: 'Corporate Consulting',
-    badge: 'w-badge-hyd',
-    body: 'Working with leadership teams to sharpen hiring practices, improve how they treat candidates, and retain the people they already have. NYC-based, serving organizations nationwide.',
-    href: '/services#consulting',
-  },
-  {
-    label: 'Workshops',
-    badge: 'w-badge-denim',
-    body: 'Group workshops on interview skills, networking, professionalism, and career development — tailored for conferences, corporate teams, summits, and companies. Booking now.',
-    href: '/workshops',
+    body: 'HR, TA, and People Ops professionals looking for their next role. A 1:1 search process built around where you actually want to go — with someone who understands the function from the inside.',
+    href: '/for-candidates',
   },
 ]
 
@@ -38,18 +26,19 @@ export default function HomePage() {
         <div style={{ display: 'grid', gridTemplateColumns: '1fr auto', gap: 48, alignItems: 'center' }}>
           <div>
             <div className="w-eyebrow" style={{ marginBottom: 18 }}>
-              Recruiting · Career Coaching · Corporate Consulting · Workshops
+              People · Talent Acquisition · HR · Operations
             </div>
             <h1 className="w-display" style={{ fontSize: 'clamp(28px, 4.5vw, 48px)', marginBottom: 20, maxWidth: 560 }}>
-              People built this company. I place the people who <em>protect that.</em>
+              Recruiting for HR, Talent, and People Ops — by someone who&apos;s <em>held the seat.</em>
             </h1>
             <p className="w-hero-sub">
-              The Wilson Co. is a recruiting practice for People, Talent Acquisition, HR, and Operations roles —
-              built by someone who&apos;s held the seat, not just filled it. Based in New York City, serving clients nationwide.
+              A recruiting practice specializing in People, Talent Acquisition, HR, and Operations roles —
+              for companies hiring and for professionals ready for their next move.
+              Built by someone who&apos;s held the seat, not just filled it. Based in NYC, serving clients nationwide.
             </p>
             <div className="w-hero-actions">
-              <Link href="/services" className="w-btn w-btn-oak">Our services →</Link>
-              <Link href="/contact"  className="w-btn w-btn-outline">Get in touch</Link>
+              <Link href="/for-companies" className="w-btn w-btn-oak">For companies →</Link>
+              <Link href="/for-candidates" className="w-btn w-btn-outline">For candidates</Link>
             </div>
           </div>
           <div style={{ flexShrink: 0 }}>
@@ -90,9 +79,9 @@ export default function HomePage() {
 
       {/* Services */}
       <div className="w-section w-container">
-        <p className="w-eyebrow" style={{ marginBottom: 20 }}>What we do</p>
-        <div className="w-grid-3">
-          {SERVICES.map(s => (
+        <p className="w-eyebrow" style={{ marginBottom: 20 }}>How we work</p>
+        <div className="w-grid-2">
+          {OFFERINGS.map(s => (
             <Link key={s.label} href={s.href} className="w-card" style={{ textDecoration: 'none', display: 'block', transition: 'border-color 0.2s' }}
               onMouseOver={e => (e.currentTarget.style.borderColor = 'var(--oak)')}
               onMouseOut={e  => (e.currentTarget.style.borderColor = 'var(--w-border)')}>
@@ -102,6 +91,12 @@ export default function HomePage() {
             </Link>
           ))}
         </div>
+        <p style={{ fontSize: 12.5, fontWeight: 300, color: 'var(--ink-3)', lineHeight: 1.7, marginTop: 18 }}>
+          We also take on a select number of career coaching, talent consulting, and workshop engagements.{' '}
+          <Link href="/additional-services" style={{ color: 'var(--oak)', textDecoration: 'none', fontWeight: 500 }}>
+            See additional services →
+          </Link>
+        </p>
       </div>
 
       <div className="w-container"><div className="w-divider" /></div>
@@ -127,7 +122,7 @@ export default function HomePage() {
               A more authentic, more thoughtful approach to hiring — one that respects the gravity of a career decision
               and treats both the person and the company as partners in getting it right.
             </p>
-            <Link href="/about" className="w-btn w-btn-outline" style={{ fontSize: 11 }}>Read the full story →</Link>
+            <Link href="/about" className="w-btn w-btn-outline" style={{ fontSize: 11 }}>Why this function →</Link>
           </div>
         </div>
       </div>
@@ -140,12 +135,12 @@ export default function HomePage() {
             Not sure where to start? <em>Start here.</em>
           </h2>
           <p style={{ fontSize: 13, fontWeight: 300, color: 'var(--ink-3)', lineHeight: 1.75, maxWidth: 420, margin: '0 auto 24px' }}>
-            Whether you&apos;re an individual looking for clarity on your next move or a company tired of the same broken process —
+            Whether you&apos;re a company looking to make a People hire or a People Leader ready for your next move —
             reach out. We&apos;d love to hear where you are.
           </p>
           <div className="w-hero-actions" style={{ justifyContent: 'center' }}>
-            <Link href="/contact" className="w-btn w-btn-oak">Contact us →</Link>
-            <Link href="/services" className="w-btn w-btn-outline">View services</Link>
+            <Link href="/contact" className="w-btn w-btn-oak">Get in touch →</Link>
+            <Link href="/for-companies" className="w-btn w-btn-outline">For companies</Link>
           </div>
         </div>
       </div>

@@ -8,9 +8,9 @@ const SERVICES = [
     headline: 'Hire the people who build the people function.',
     body: [
       'People, Talent Acquisition, HR, and Operations are the function every other function depends on — and the one most companies hire worst. We specialize in placing these professionals, from individual contributors through CHRO, in any industry. Not because it\'s a niche, but because it\'s the seat that decides who gets hired, who stays, and whether the culture holds while the company scales.',
-      'We lead searches end-to-end: defining the role, building the pipeline, managing the process, and closing the right person. Senior, specialized, and relationship-driven. 15% fee versus the 20–25% market average, with a 90-day replacement guarantee. We don\'t flood inboxes. We find the people worth finding.',
+      'We lead searches end-to-end: defining the role, building the pipeline, managing the process, and closing the right person. Senior, specialized, and relationship-driven. 20% fee versus the 25–30% market average, with a 90-day replacement guarantee. We don\'t flood inboxes. We find the people worth finding.',
     ],
-    details: ['People, TA, HR & Operations roles · any industry', 'HRBP through CHRO — IC through executive', 'Retained and contingency search', '15% fee vs. 20–25% market average', '90-day replacement guarantee', 'Full search management — sourcing through close', 'Based in NYC · serving organizations nationwide'],
+    details: ['People, TA, HR & Operations roles · any industry', 'HRBP through CHRO — IC through executive', 'Retained and contingency search', '20% fee vs. 25–30% market average', '90-day replacement guarantee', 'Full search management — sourcing through close', 'Based in NYC · serving organizations nationwide'],
   },
   {
     id: 'coaching',
