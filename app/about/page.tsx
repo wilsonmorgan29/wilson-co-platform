@@ -3,7 +3,7 @@ import AboutPage from '@/components/wilson/AboutPage'
 
 export const metadata = {
   title: 'About — The Wilson Co.',
-  description: 'From assistant to Director at Locke Lord, Weil Gotshal & Manges, and Kirkland & Ellis — a decade building people functions from the inside.',
+  description: 'From assistant to Director at Kirkland & Ellis, Weil Gotshal & Manges, and Locke Lord — a decade of legal recruiting from the inside.',
 }
 
 export default function Page() {

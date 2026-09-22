@@ -9,12 +9,12 @@ export default function ForPeopleLeadersPage() {
       <div className="w-hero" style={{ paddingBottom: 56 }}>
         <p className="w-eyebrow" style={{ marginBottom: 16 }}>For Candidates</p>
         <h1 className="w-display" style={{ fontSize: 'clamp(28px, 4vw, 44px)', marginBottom: 20, maxWidth: 600 }}>
-          Your next role, found by someone who <em>actually knows the function.</em>
+          Your next legal role, found by someone who <em>knows the industry from the inside.</em>
         </h1>
         <p className="w-hero-sub" style={{ maxWidth: 560 }}>
           Most recruiters will send your résumé somewhere and hope for the best. We work differently —
           a 1:1 search process built around where you actually want to go, not just what you've done.
-          For HR, Talent Acquisition, People Ops, and Operations professionals ready for their next move.
+          For legal talent, HR, and operations professionals, and for attorneys, ready for their next move at a law firm or a company hiring for legal roles.
         </p>
         <div className="w-hero-actions" style={{ marginTop: 28 }}>
           <Link href="/contact?subject=Recruiting" className="w-btn w-btn-oak">Let's talk →</Link>
@@ -34,16 +34,15 @@ export default function ForPeopleLeadersPage() {
           </div>
           <div className="w-stack" style={{ gap: 16 }}>
             <p style={{ fontSize: 13, fontWeight: 300, color: 'var(--ink-2)', lineHeight: 1.85 }}>
-              The recruiters filling most People and HR roles have never worked in a People function.
-              They know how to read a job description. They don&apos;t know what it actually takes to be an
-              HRBP at a scaling company, or what separates a VP of TA who builds something from one who
-              just fills requisitions. That gap shows — in the roles they pitch, in the questions they
-              ask, and in the matches they make.
+              Most recruiters placing people into legal have never worked inside a law firm. They know how to
+              read a job description. They don&apos;t know what it takes to run a summer associate program,
+              how a lateral integrates into a practice group, or why one firm&apos;s culture fits you and another&apos;s
+              won&apos;t. That gap shows in the roles they pitch, the questions they ask, and the matches they make.
             </p>
             <p style={{ fontSize: 13, fontWeight: 300, color: 'var(--ink-2)', lineHeight: 1.85 }}>
-              Ten years inside recruiting and talent development at elite global firms means I understand
-              what you actually do, what you&apos;re actually worth, and what the right next role actually looks
-              like for you. That&apos;s not a pitch — it&apos;s the reason this works.
+              Ten years inside attorney recruiting and professional development at Kirkland & Ellis, Weil Gotshal &
+              Manges, and Locke Lord means I understand what you actually do, what you&apos;re worth, and
+              what the right next role looks like for you. That&apos;s not a pitch. It&apos;s the reason this works.
             </p>
           </div>
         </div>
@@ -55,19 +54,55 @@ export default function ForPeopleLeadersPage() {
       <div className="w-section w-container">
         <p className="w-eyebrow" style={{ marginBottom: 8 }}>Who we work with</p>
         <p style={{ fontSize: 13, fontWeight: 300, color: 'var(--ink-3)', marginBottom: 24, lineHeight: 1.6, maxWidth: 520 }}>
-          People, TA, HR, and Operations professionals at every level — from individual contributors ready to step up, to CHROs making a strategic move.
+          Legal professionals at every level, at law firms and companies hiring for legal roles.
         </p>
         <div className="w-grid-3" style={{ gap: 12 }}>
           {[
-            { level: 'IC / Manager', examples: 'Recruiter, HR Coordinator, TA Specialist, HRBP, People Ops Coordinator, Recruiting Manager' },
-            { level: 'Director / VP', examples: 'Director of People, VP of HR, Director of Talent Acquisition, VP of People Operations, Director of Total Rewards' },
-            { level: 'Head of People / CHRO', examples: 'Head of People, Chief People Officer, CHRO, Chief HR Officer' },
+            { level: 'Law firm talent & ops', examples: 'Legal Recruiting, Attorney Recruiting, Professional Development, HR, Operations, from coordinator to Chief Talent Officer' },
+            { level: 'In-house & companies', examples: 'In-house counsel, legal operations, compliance, and the talent and HR professionals supporting legal teams' },
+            { level: 'Attorneys', examples: 'Associates and senior associates exploring a lateral move, a role in-house, or a different shape of legal career' },
           ].map(b => (
             <div key={b.level} className="w-card w-card-beige" style={{ padding: '20px 20px' }}>
               <span className="w-badge w-badge-gold" style={{ marginBottom: 10, display: 'inline-block' }}>{b.level}</span>
               <div style={{ fontSize: 11, fontWeight: 300, color: 'var(--ink-3)', lineHeight: 1.6 }}>{b.examples}</div>
             </div>
           ))}
+        </div>
+      </div>
+
+      <div className="w-container"><div className="w-divider" /></div>
+
+      {/* For attorneys */}
+      <div className="w-section w-container" id="attorneys">
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1.6fr', gap: 40, alignItems: 'start' }}>
+          <div>
+            <span className="w-badge w-badge-gold" style={{ marginBottom: 12, display: 'inline-block' }}>For Attorneys</span>
+            <h2 className="w-display" style={{ fontSize: 'clamp(20px, 2.5vw, 28px)' }}>
+              If you&apos;ve been wondering <em>whether this is it.</em>
+            </h2>
+          </div>
+          <div className="w-stack" style={{ gap: 16 }}>
+            <p style={{ fontSize: 13, fontWeight: 300, color: 'var(--ink-2)', lineHeight: 1.85 }}>
+              In ten years inside Big Law, I had countless conversations with lawyers who didn&apos;t want to be
+              there forever. Brilliant people, working at the highest level, quietly telling me they had no
+              balance, no life outside billables, and no real sense of what else was out there.
+            </p>
+            <p style={{ fontSize: 13, fontWeight: 300, color: 'var(--ink-2)', lineHeight: 1.85 }}>
+              Most of them weren&apos;t unhappy with the law. They were unhappy with the shape of the job. But
+              leaving felt like starting over, and nobody in the building could tell them what the alternatives
+              actually looked like.
+            </p>
+            <p style={{ fontSize: 13, fontWeight: 300, color: 'var(--ink-2)', lineHeight: 1.85 }}>
+              That&apos;s where I come in. Whether the answer is a firm that genuinely fits you better, a move
+              in-house, or something adjacent to practice altogether, I&apos;ll help you figure out what you
+              actually want before we talk about roles. No pressure to move, and no fee to you.
+            </p>
+            <div style={{ marginTop: 4 }}>
+              <Link href="/contact?subject=Attorney+opportunities" className="w-btn w-btn-oak" style={{ fontSize: 11 }}>
+                Start a confidential conversation →
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
 

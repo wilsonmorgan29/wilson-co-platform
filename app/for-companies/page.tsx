@@ -3,7 +3,7 @@ import ForCompaniesPage from './ForCompaniesPage'
 
 export const metadata = {
   title: 'For Companies — The Wilson Co.',
-  description: 'Retained and contingency search for People, Talent Acquisition, HR, and Operations roles. 20% fee. 90-day guarantee.',
+  description: 'Legal recruiting for law firms and companies hiring for legal roles — legal professionals and attorneys, from support teams to in-house counsel.',
 }
 
 export default function Page() {

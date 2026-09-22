@@ -3,7 +3,7 @@ import ForPeopleLeadersPage from './ForPeopleLeadersPage'
 
 export const metadata = {
   title: 'For Candidates — The Wilson Co.',
-  description: 'Advisory for leaders building a People function. Career coaching for HR, TA, and People Ops professionals navigating their next move.',
+  description: 'A 1:1 search process for legal talent, HR, and operations professionals and attorneys — at law firms and companies hiring for legal roles. No fee to candidates.',
 }
 
 export default function Page() {

@@ -4,19 +4,19 @@ import Link from 'next/link'
 
 const BANDS = [
   {
-    level: 'IC / Manager',
-    roles: 'HR Coordinator, Recruiter, TA Specialist, People Ops Coordinator, HRBP, Recruiting Manager',
-    desc: 'The people doing the day-to-day work of the function — sourcing, screening, onboarding, supporting employees. Getting this level right sets the foundation for everything above it.',
+    level: 'Law firm talent & operations',
+    roles: 'Legal Recruiting Manager, Director of Attorney Recruiting, Professional Development, HR Business Partner, Chief Talent Officer, Director of Operations',
+    desc: 'The business-side teams that decide which lawyers a firm hires, how they develop, and whether they stay. This is the seat I held for a decade, at Kirkland & Ellis, Weil Gotshal & Manges, and Locke Lord.',
   },
   {
-    level: 'Director / VP',
-    roles: 'Director of People, VP of HR, Director of Talent Acquisition, VP of People Operations',
-    desc: 'Function leaders who translate strategy into process. They build the team, own the systems, and sit at the table when decisions get made about who gets hired — and who stays.',
+    level: 'In-house & companies',
+    roles: 'In-house counsel, legal operations, contract management, compliance, and the talent and HR professionals who support legal teams',
+    desc: 'Companies building or growing a legal function need people who understand how legal teams actually operate. I know that world from the inside, and I know the people who do too.',
   },
   {
-    level: 'Head of People / CHRO',
-    roles: 'Head of People, Chief People Officer, CHRO, Chief HR Officer',
-    desc: 'The executive who defines the culture, owns the people strategy, and is accountable for whether the organization can grow. The most consequential hire most companies make, and the one most often done badly.',
+    level: 'Attorneys',
+    roles: 'Associates (lateral moves) and in-house counsel',
+    desc: 'Associate and in-house placements, built on years of attorney recruiting inside Big Law. I know how firms evaluate lateral candidates, how the process runs, and what makes an offer close.',
   },
 ]
 
@@ -27,18 +27,18 @@ export default function ForCompaniesPage() {
       <div className="w-hero" style={{ paddingBottom: 56 }}>
         <p className="w-eyebrow" style={{ marginBottom: 16 }}>For Companies</p>
         <h1 className="w-display" style={{ fontSize: 'clamp(28px, 4vw, 44px)', marginBottom: 20, maxWidth: 600 }}>
-          The People department is arguably the most important one at a company, and <em>the hardest one to hire for well.</em>
+          Legal recruiting, from someone who spent a decade <em>doing it inside Big Law.</em>
         </h1>
         <p className="w-hero-sub" style={{ maxWidth: 580 }}>
-          Retained and contingency search for People, Talent Acquisition, HR, and Operations roles —
-          HRBP through CHRO, in any industry. Run by someone who&apos;s held the seat, not just filled it.
+          Retained and contingency search for law firms and companies hiring for legal roles: talent, HR, and operations
+          leaders, plus associate and in-house attorney placements. Run by someone who&apos;s held the seat, not just filled it.
         </p>
         <div style={{ display: 'flex', gap: 16, marginTop: 28, flexWrap: 'wrap' }}>
           <div style={{ background: 'var(--oak)', borderRadius: 'var(--w-radius)', padding: '12px 20px', display: 'flex', alignItems: 'center', gap: 10 }}>
             <span style={{ fontSize: 18, color: '#fff' }}>✓</span>
             <div>
-              <div style={{ fontSize: 12, fontWeight: 700, color: '#fff', letterSpacing: '0.02em' }}>20% fee</div>
-              <div style={{ fontSize: 10, color: 'rgba(255,255,255,0.75)', fontWeight: 300 }}>vs. 20–25% market average</div>
+              <div style={{ fontSize: 12, fontWeight: 700, color: '#fff', letterSpacing: '0.02em' }}>25–30% fee</div>
+              <div style={{ fontSize: 10, color: 'rgba(255,255,255,0.75)', fontWeight: 300 }}>of first-year compensation</div>
             </div>
           </div>
           <div style={{ background: 'var(--w-bg-alt)', border: '1px solid var(--w-border)', borderRadius: 'var(--w-radius)', padding: '12px 20px', display: 'flex', alignItems: 'center', gap: 10 }}>
@@ -61,27 +61,26 @@ export default function ForCompaniesPage() {
       <div className="w-section w-container">
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1.6fr', gap: 40, alignItems: 'start' }}>
           <div>
-            <p className="w-eyebrow" style={{ marginBottom: 14 }}>Why this function</p>
+            <p className="w-eyebrow" style={{ marginBottom: 14 }}>Why legal</p>
             <h2 className="w-display" style={{ fontSize: 'clamp(20px, 2.5vw, 28px)' }}>
-              The seat that decides <em>everything else.</em>
+              A world you have to <em>know from the inside.</em>
             </h2>
           </div>
           <div className="w-stack" style={{ gap: 16 }}>
             <p style={{ fontSize: 13, fontWeight: 300, color: 'var(--ink-2)', lineHeight: 1.85 }}>
-              People, Talent Acquisition, HR, and Operations are the function every other function depends on.
-              Who gets hired, who stays, what the culture actually looks like when no one&apos;s watching —
-              all of it runs through who sits in this seat. And it&apos;s the function most companies have the hardest time hiring for.
+              Law firms run on people. Their product is their lawyers, and the teams that recruit, develop, and
+              keep those lawyers shape everything else: the associate class, the lateral pipeline, the culture,
+              and whether the best people stay long enough to make partner.
             </p>
             <p style={{ fontSize: 13, fontWeight: 300, color: 'var(--ink-2)', lineHeight: 1.85 }}>
-              The reason isn&apos;t a lack of effort. It&apos;s that most recruiters in this space have never been inside
-              a People function — never built a TA process, never run an HRBP model, never sat in a room where
-              the CHRO is explaining to a board why attrition is up. They know what the job description says.
-              They don&apos;t know what the job is.
+              Legal is also its own world, with its own calendar, hierarchy, and unwritten rules. Summer programs,
+              lateral integration, partnership tracks, billable-hour culture. Most recruiters learn it from the
+              outside. Companies hiring for legal roles face the same problem: they need people who understand how legal actually works.
             </p>
             <p style={{ fontSize: 13, fontWeight: 300, color: 'var(--ink-2)', lineHeight: 1.85 }}>
-              I&apos;ve been that hire. Ten years inside recruiting and talent development at elite global firms —
-              building the function from the inside, not just filling roles into it. That&apos;s not a line an
-              algorithm can fake, and it&apos;s not a search a keyword filter can run.
+              I&apos;ve been that hire. Ten years inside attorney recruiting and professional development at
+              Kirkland & Ellis, Weil Gotshal & Manges, and Locke Lord, from recruiting assistant to Director.
+              I know the job, the firms, and the people. That&apos;s not something a keyword filter can replicate.
             </p>
           </div>
         </div>
@@ -93,11 +92,11 @@ export default function ForCompaniesPage() {
       <div className="w-section w-container">
         <p className="w-eyebrow" style={{ marginBottom: 8 }}>Who we place</p>
         <p style={{ fontSize: 13, fontWeight: 300, color: 'var(--ink-3)', marginBottom: 28, lineHeight: 1.6, maxWidth: 520 }}>
-          People, TA, HR, and Operations roles across every seniority level — in any industry.
+          Three practice areas, all within the legal industry.
         </p>
         <div className="w-stack" style={{ gap: 12 }}>
           {BANDS.map((b, i) => (
-            <div key={b.level} className="w-card" style={{ display: 'grid', gridTemplateColumns: '200px 1fr', gap: 24, alignItems: 'start' }}>
+            <div key={b.level} className="w-card" style={{ display: 'grid', gridTemplateColumns: '240px 1fr', gap: 24, alignItems: 'start' }}>
               <div>
                 <span className="w-badge w-badge-gold" style={{ marginBottom: 8, display: 'inline-block' }}>{b.level}</span>
                 <div style={{ fontSize: 11, fontWeight: 300, color: 'var(--ink-3)', lineHeight: 1.55 }}>{b.roles}</div>

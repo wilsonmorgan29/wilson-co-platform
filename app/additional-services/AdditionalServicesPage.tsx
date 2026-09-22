@@ -15,7 +15,7 @@ const SERVICES = [
     details: [
       '1:1 engagement — not group sessions',
       'Career transition, pivot, and advancement support',
-      'Mid-level to senior professionals across industries',
+      'Attorneys and legal professionals at any stage',
       '3-session, 6-session, or ongoing engagements',
       'Based in NYC · available virtually, nationwide',
     ],
@@ -69,7 +69,7 @@ export default function AdditionalServicesPage() {
           Beyond the placement, <em>a few other ways we help.</em>
         </h1>
         <p className="w-hero-sub" style={{ maxWidth: 580 }}>
-          Recruiting is the core of what we do. But a decade inside the People function built expertise
+          Recruiting is the core of what we do. But a decade inside Big Law built expertise
           that doesn&apos;t only apply to search — so we take on a select number of coaching, consulting, and
           workshop engagements alongside it.
         </p>
@@ -86,7 +86,7 @@ export default function AdditionalServicesPage() {
               Looking to hire, or looking for your next role?
             </div>
             <div style={{ fontSize: 12, fontWeight: 300, color: 'var(--ink-3)', lineHeight: 1.6 }}>
-              Recruiting for People, TA, HR, and Operations roles is our primary practice.
+              Legal recruiting for law firms, in-house teams, and attorneys is our primary practice.
             </div>
           </div>
           <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap' }}>

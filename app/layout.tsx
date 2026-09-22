@@ -13,8 +13,8 @@ const kumbhSans = Kumbh_Sans({
 })
 
 export const metadata: Metadata = {
-  title: 'The Wilson Co. — Career Coaching & Talent Collective',
-  description: 'A career coaching and talent collective built for mid-career professionals. Clarity, confidence, purpose.',
+  title: 'The Wilson Co. — Legal Recruiting for Law Firms & In-House Teams',
+  description: 'The Wilson Co. is a NYC-based legal recruiting firm placing legal professionals and attorneys at law firms and companies hiring for legal roles. Founded by a former Big Law recruiting Director.',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

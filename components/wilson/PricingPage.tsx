@@ -21,8 +21,8 @@ export default function PricingPage() {
           <div style={{ background: 'var(--oak)', borderRadius: 'var(--w-radius)', padding: '14px 20px', display: 'flex', alignItems: 'center', gap: 10 }}>
             <span style={{ fontSize: 18, color: '#fff' }}>✓</span>
             <div>
-              <div style={{ fontSize: 12, fontWeight: 700, color: '#fff', letterSpacing: '0.02em' }}>20% fee</div>
-              <div style={{ fontSize: 10, color: 'rgba(255,255,255,0.75)', fontWeight: 300 }}>vs. 25–30% market average</div>
+              <div style={{ fontSize: 12, fontWeight: 700, color: '#fff', letterSpacing: '0.02em' }}>25–30% fee</div>
+              <div style={{ fontSize: 10, color: 'rgba(255,255,255,0.75)', fontWeight: 300 }}>of first-year compensation</div>
             </div>
           </div>
           <div style={{ background: 'var(--w-bg-alt)', border: '1px solid var(--w-border)', borderRadius: 'var(--w-radius)', padding: '14px 20px', display: 'flex', alignItems: 'center', gap: 10 }}>
@@ -39,8 +39,8 @@ export default function PricingPage() {
         {/* Recruiting */}
         <p className="w-eyebrow" style={{ marginBottom: 6 }}>Recruiting</p>
         <p style={{ fontSize: 12, fontWeight: 300, color: 'var(--ink-3)', marginBottom: 16, lineHeight: 1.6 }}>
-          Retained and contingency search for People, Talent Acquisition, HR, and Operations roles —
-          HRBP through CHRO, any industry. Fee is structured as a percentage of first-year compensation,
+          Retained and contingency search for law firms and companies hiring for legal roles: talent, HR, and operations
+          roles, plus associate and in-house attorney placements. Fee is structured as a percentage of first-year compensation,
           scoped per engagement.
         </p>
         <div className="w-grid-2" style={{ marginBottom: 32 }}>
@@ -49,8 +49,8 @@ export default function PricingPage() {
             <div className="w-tier-price" style={{ fontSize: 22, paddingTop: 4 }}>By scope</div>
             <div className="w-tier-per">contingency or retained</div>
             {[
-              'People, TA, HR & Operations roles',
-              'HRBP through CHRO · any industry',
+              'Legal talent, HR & operations roles',
+              'Associate and in-house attorney placements',
               'Full search management — sourcing through close',
               'Fee structured as % of first-year comp',
               '90-day replacement guarantee',
@@ -90,7 +90,7 @@ export default function PricingPage() {
             { q: 'What does "by scope" mean?', a: 'Every search is different. Fee percentage and structure (retained vs. contingency) are agreed upon before the search begins — no surprises mid-process.' },
             { q: 'What triggers the 90-day guarantee?', a: 'If a placed candidate leaves or is let go within 90 days of their start date for any reason other than layoff, we conduct a replacement search at no additional fee.' },
             { q: 'Retained vs. contingency — which is right?', a: 'Retained searches involve an upfront fee and are best for senior, urgent, or confidential roles. Contingency is fee-on-placement and works well for roles where the timeline is more flexible. We\'ll help you figure out which structure makes sense for your situation.' },
-            { q: 'Is there a fee for candidates?', a: 'No. If you\'re a People Leader looking for your next role, there\'s no cost to work with us. Our fee is paid by the hiring company.' },
+            { q: 'Is there a fee for candidates?', a: 'No. If you\'re a legal professional or attorney looking for your next role, there\'s no cost to work with us. Our fee is paid by the hiring company.' },
           ].map(item => (
             <div key={item.q} className="w-card w-card-beige" style={{ padding: '20px 22px' }}>
               <div style={{ fontSize: 12, fontWeight: 600, color: 'var(--ink-1)', marginBottom: 8, lineHeight: 1.4 }}>{item.q}</div>

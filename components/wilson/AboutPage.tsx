@@ -10,11 +10,11 @@ export default function AboutPage() {
           <div>
             <p className="w-eyebrow" style={{ marginBottom: 16 }}>About Morgan Wilson</p>
             <h1 className="w-display" style={{ fontSize: 'clamp(28px, 4vw, 44px)', marginBottom: 20, maxWidth: 620 }}>
-              I spent a decade building people functions from the inside. Now I help companies build <em>theirs.</em>
+              I spent a decade hiring for law firms from the inside. Now I help them <em>from the outside.</em>
             </h1>
             <p className="w-hero-sub">
               From assistant to Director across three of the world&apos;s most prestigious law firms —
-              and now running my own recruiting practice focused on the one function I know best.
+              and now running my own recruiting practice focusing on legal services and attorney roles, the industry I know best.
             </p>
           </div>
           <div style={{ flexShrink: 0, marginRight: -24, marginTop: -40 }}>
@@ -44,8 +44,8 @@ export default function AboutPage() {
           <div className="w-stack" style={{ gap: 16 }}>
             <p style={{ fontSize: 13, fontWeight: 300, color: 'var(--ink-2)', lineHeight: 1.85 }}>
               I started my career as a recruiting assistant and worked my way up to Director — building that
-              progression across three of the largest and most prestigious law firms in the world: Locke Lord,
-              Weil Gotshal &amp; Manges, and Kirkland &amp; Ellis. Then I spent a year and a half at a boutique
+              progression across three of the largest and most prestigious law firms in the world: Kirkland &amp; Ellis,
+              Weil Gotshal &amp; Manges, and Locke Lord. Then I spent a year and a half at a boutique
               wealth management firm, deliberately stepping into a different industry to see how talent and people
               strategy worked outside of Big Law.
             </p>
@@ -81,20 +81,20 @@ export default function AboutPage() {
           <div>
             <p className="w-eyebrow" style={{ marginBottom: 14 }}>Why this niche</p>
             <h2 className="w-display" style={{ fontSize: 'clamp(20px, 2.5vw, 28px)' }}>
-              The most important function — and the most <em>overlooked one.</em>
+              The industry I know <em>best.</em>
             </h2>
           </div>
           <div className="w-stack" style={{ gap: 16 }}>
             <p style={{ fontSize: 13, fontWeight: 300, color: 'var(--ink-2)', lineHeight: 1.85 }}>
-              People and HR is often the forgotten function — treated as overhead, filled last, supported least.
-              But I would argue it&apos;s the most important seat at the table. The right Head of People, the right
-              TA leader, the right HR business partner — these hires shape who gets into the company, how people
-              are developed, and whether the culture actually holds when things get hard.
+              Law firms run on people. Their lawyers are the product, and the talent, HR, and operations teams behind
+              them decide who gets hired, how they develop, and whether they stay. Those teams are often treated as
+              overhead. I would argue they&apos;re the most important seat in the building. Companies hiring for legal
+              roles need that same understanding of how legal teams actually work.
             </p>
             <p style={{ fontSize: 13, fontWeight: 300, color: 'var(--ink-2)', lineHeight: 1.85 }}>
               I started The Wilson Co. because I&apos;d seen what happens when these roles are filled well, and
-              (more importantly) what happens when they aren&apos;t. Most search firms placing People and HR professionals have never
-              worked inside the function. They know the job description. They don&apos;t know the job. I do. And
+              (more importantly) what happens when they aren&apos;t. Most recruiters placing people into legal have never
+              worked inside a law firm. They know the job description. They don&apos;t know the job. I do. And
               that difference changes everything about how a search gets run and what the right match actually
               looks like.
             </p>

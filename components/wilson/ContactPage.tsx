@@ -45,8 +45,9 @@ export default function ContactPage() {
           Let&apos;s have a real <em>conversation.</em>
         </h1>
         <p className="w-hero-sub">
-          Whether you&apos;re an individual thinking about your next move, a company looking for help
-          with hiring, or just curious about how we work — reach out. We read everything.
+          Whether you&apos;re a law firm or company hiring, an attorney wondering what else is out
+          there, or a legal professional ready for your next move — reach out. We read everything, and
+          every conversation is confidential.
         </p>
       </div>
 
@@ -114,7 +115,7 @@ export default function ContactPage() {
                 <div className="w-field">
                   <label className="w-field-label">What brings you here?</label>
                   <div className="w-pill-group" style={{ marginTop: 6, marginBottom: 8 }}>
-                    {['Hiring for a role', 'Looking for my next role', 'Career coaching', 'Talent consulting', 'Workshop inquiry', 'Something else'].map(s => (
+                    {['Hiring for a role', 'Attorney opportunities', 'Looking for my next role', 'Career coaching', 'Talent consulting', 'Workshop inquiry', 'Something else'].map(s => (
                       <button
                         key={s}
                         type="button"

@@ -7,13 +7,13 @@ const OFFERINGS = [
   {
     label: 'For Companies',
     badge: 'w-badge-gold',
-    body: 'Retained and contingency search for People, Talent Acquisition, HR, and Operations roles — HRBP through CHRO, in any industry. 20% fee vs. a 25–30% market average. 90-day replacement guarantee.',
+    body: 'Retained and contingency search for law firms and companies hiring for legal roles: talent, HR, and operations leaders, plus associate and in-house attorney placements. 90-day replacement guarantee.',
     href: '/for-companies',
   },
   {
     label: 'For Candidates',
     badge: 'w-badge-oak',
-    body: 'HR, TA, and People Ops professionals looking for their next role. A 1:1 search process built around where you actually want to go — with someone who understands the function from the inside.',
+    body: 'Legal talent, HR, and operations professionals, and attorneys, looking for their next role. A 1:1 search process built around where you actually want to go — with someone who knows legal from the inside.',
     href: '/for-candidates',
   },
 ]
@@ -25,16 +25,13 @@ export default function HomePage() {
       <div className="w-hero" style={{ paddingBottom: 72 }}>
         <div style={{ display: 'grid', gridTemplateColumns: '1fr auto', gap: 48, alignItems: 'center' }}>
           <div>
-            <div className="w-eyebrow" style={{ marginBottom: 18 }}>
-              People · Talent Acquisition · HR · Operations
-            </div>
             <h1 className="w-display" style={{ fontSize: 'clamp(28px, 4.5vw, 48px)', marginBottom: 20, maxWidth: 560 }}>
-              Recruiting for HR, Talent, and People Ops — by someone who&apos;s <em>held the seat.</em>
+              For the people who hire legal talent — and the legal talent ready for <em>what&apos;s next.</em>
             </h1>
             <p className="w-hero-sub">
-              A recruiting practice specializing in People, Talent Acquisition, HR, and Operations roles —
-              for companies hiring and for professionals ready for their next move.
-              Built by someone who&apos;s held the seat, not just filled it. Based in NYC, serving clients nationwide.
+              The Wilson Co. is focused on placing legal professionals and attorneys at growing
+              organizations that are intentional about their hiring. Founded by a former Big Law
+              recruiter. Based in NYC but serving clients nationwide.
             </p>
             <div className="w-hero-actions">
               <Link href="/for-companies" className="w-btn w-btn-oak">For companies →</Link>
@@ -107,22 +104,23 @@ export default function HomePage() {
           <div>
             <p className="w-eyebrow" style={{ marginBottom: 16 }}>Our why</p>
             <h2 className="w-display" style={{ fontSize: 'clamp(22px, 3vw, 32px)', marginBottom: 0 }}>
-              Built after watching the industry <em>fail everyone.</em>
+              Two things I saw <em>inside those firms.</em>
             </h2>
           </div>
           <div>
             <p style={{ fontSize: 13, fontWeight: 300, color: 'var(--ink-2)', lineHeight: 1.85, marginBottom: 16 }}>
-              After more than ten years in the recruiting industry, I&apos;ve watched it get worse in almost every direction.
-              Jobs posted on LinkedIn generate thousands of résumés before lunch. Algorithms screen people before a
-              human reads their name. Candidates are ghosted. Hiring managers are overwhelmed. Both sides walk away
-              frustrated — and somehow the process keeps getting repeated.
+              The first: law firms run on their lawyers — they are the product. And yet the teams responsible for
+              recruiting, developing, and keeping those lawyers are consistently the most overlooked ones. Filled
+              last. Resourced least. The right hire in those seats shapes a firm&apos;s culture and retention more
+              than almost any other decision it makes.
             </p>
             <p style={{ fontSize: 13, fontWeight: 300, color: 'var(--ink-2)', lineHeight: 1.85, marginBottom: 20 }}>
-              The Wilson Co. was built after years of hearing the same thing from both sides: there has to be a better way.
-              A more authentic, more thoughtful approach to hiring — one that respects the gravity of a career decision
-              and treats both the person and the company as partners in getting it right.
+              The second, and the one I think about more: I had countless conversations with lawyers who didn&apos;t
+              want to be in Big Law forever. Brilliant people at the highest level, quietly telling me they had no
+              balance and no real sense of what else was out there. Most weren&apos;t unhappy with the law. They were
+              unhappy with the shape of the job. The Wilson Co. exists for both of them.
             </p>
-            <Link href="/about" className="w-btn w-btn-outline" style={{ fontSize: 11 }}>Why this function →</Link>
+            <Link href="/about" className="w-btn w-btn-outline" style={{ fontSize: 11 }}>About Morgan →</Link>
           </div>
         </div>
       </div>
@@ -135,7 +133,7 @@ export default function HomePage() {
             Not sure where to start? <em>Start here.</em>
           </h2>
           <p style={{ fontSize: 13, fontWeight: 300, color: 'var(--ink-3)', lineHeight: 1.75, maxWidth: 420, margin: '0 auto 24px' }}>
-            Whether you&apos;re a company looking to make a People hire or a People Leader ready for your next move —
+            Whether you&apos;re a law firm or company making a legal hire, or a legal professional ready for your next move —
             reach out. We&apos;d love to hear where you are.
           </p>
           <div className="w-hero-actions" style={{ justifyContent: 'center' }}>

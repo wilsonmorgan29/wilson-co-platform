@@ -25,18 +25,11 @@ export default function WilsonShell({ children }: { children: React.ReactNode })
 
   return (
     <div className="wilson-root">
-      {/* Top bar */}
-      <div className="w-topbar">
-        <span className="w-topbar-text">
-          Clarity <span>·</span> Confidence <span>·</span> Purpose
-        </span>
-      </div>
-
       {/* Nav */}
       <nav className="w-nav">
         <Link href="/" className="w-nav-logo">
           <div className="w-nav-logo-main">The Wilson Co.</div>
-          <div className="w-nav-logo-sub">Recruiting for People, Talent &amp; HR</div>
+          <div className="w-nav-logo-sub">Clarity · Confidence · Purpose</div>
         </Link>
 
         <div className={`w-nav-links${mobileOpen ? ' open' : ''}`}>
@@ -53,9 +46,6 @@ export default function WilsonShell({ children }: { children: React.ReactNode })
         </div>
 
         <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-          <Link href="/login" className="w-btn w-btn-oak" style={{ padding: '7px 16px', fontSize: 10 }}>
-            Login →
-          </Link>
           <button
             className="w-hamburger"
             onClick={() => setMobileOpen(o => !o)}
@@ -79,16 +69,16 @@ export default function WilsonShell({ children }: { children: React.ReactNode })
           <div>
             <div className="w-footer-logo">The Wilson Co.</div>
             <div style={{ fontSize: 9, letterSpacing: '0.16em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.25)', marginTop: 4 }}>
-              Recruiting for People, Talent &amp; HR
+              Clarity · Confidence · Purpose
             </div>
             <div style={{ display: 'flex', gap: 14, marginTop: 12 }}>
               <a href="https://www.instagram.com/thewilson.co" target="_blank" rel="noopener noreferrer" style={{ fontSize: 10, color: 'var(--oak-light)', letterSpacing: '0.08em', textDecoration: 'none' }}>Instagram</a>
               <a href="https://www.linkedin.com/company/thewilsonco" target="_blank" rel="noopener noreferrer" style={{ fontSize: 10, color: 'var(--oak-light)', letterSpacing: '0.08em', textDecoration: 'none' }}>LinkedIn</a>
+              <Link href="/press" style={{ fontSize: 10, color: 'var(--oak-light)', letterSpacing: '0.08em', textDecoration: 'none' }}>Press</Link>
             </div>
           </div>
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: 6, alignItems: 'center' }}>
-            <div className="w-footer-text">Clarity · Confidence · Purpose</div>
             <div style={{ display: 'flex', gap: 16 }}>
               {navLinks.map(l => (
                 <Link key={l.href} href={l.href} style={{ fontSize: 9, color: 'rgba(255,255,255,0.3)', letterSpacing: '0.1em', textTransform: 'uppercase', textDecoration: 'none' }}>
