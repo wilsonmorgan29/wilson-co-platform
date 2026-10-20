@@ -3,7 +3,7 @@ import ForCompaniesPage from './ForCompaniesPage'
 
 export const metadata = {
   title: 'For Companies — The Wilson Co.',
-  description: 'Legal recruiting for law firms and companies hiring for legal roles — legal professionals and attorneys, from support teams to in-house counsel.',
+  description: 'Executive search across People, Talent, Operations, Marketing, HR, and Legal for venture-backed and growing companies from seed to Series C.',
 }
 
 export default function Page() {

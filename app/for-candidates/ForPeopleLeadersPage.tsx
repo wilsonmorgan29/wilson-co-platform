@@ -9,12 +9,12 @@ export default function ForPeopleLeadersPage() {
       <div className="w-hero" style={{ paddingBottom: 56 }}>
         <p className="w-eyebrow" style={{ marginBottom: 16 }}>For Candidates</p>
         <h1 className="w-display" style={{ fontSize: 'clamp(28px, 4vw, 44px)', marginBottom: 20, maxWidth: 600 }}>
-          Your next legal role, found by someone who <em>knows the industry from the inside.</em>
+          Your next role, found by people who <em>have done the job from the inside.</em>
         </h1>
         <p className="w-hero-sub" style={{ maxWidth: 560 }}>
           Most recruiters will send your résumé somewhere and hope for the best. We work differently —
           a 1:1 search process built around where you actually want to go, not just what you've done.
-          For legal talent, HR, and operations professionals, and for attorneys, ready for their next move at a law firm or a company hiring for legal roles.
+          For senior leaders across People, Talent, Operations, Marketing, HR, and Legal who are ready for their next move.
         </p>
         <div className="w-hero-actions" style={{ marginTop: 28 }}>
           <Link href="/contact?subject=Recruiting" className="w-btn w-btn-oak">Let's talk →</Link>
@@ -29,20 +29,21 @@ export default function ForPeopleLeadersPage() {
           <div>
             <p className="w-eyebrow" style={{ marginBottom: 14 }}>Why it's different</p>
             <h2 className="w-display" style={{ fontSize: 'clamp(20px, 2.5vw, 28px)' }}>
-              Placed by someone who&apos;s <em>been in your seat.</em>
+              Placed by people who have <em>sat in your seat.</em>
             </h2>
           </div>
           <div className="w-stack" style={{ gap: 16 }}>
             <p style={{ fontSize: 13, fontWeight: 300, color: 'var(--ink-2)', lineHeight: 1.85 }}>
-              Most recruiters placing people into legal have never worked inside a law firm. They know how to
-              read a job description. They don&apos;t know what it takes to run a summer associate program,
-              how a lateral integrates into a practice group, or why one firm&apos;s culture fits you and another&apos;s
-              won&apos;t. That gap shows in the roles they pitch, the questions they ask, and the matches they make.
+              Most recruiters have never worked inside the functions they staff. They know how to read a job
+              description. They don&apos;t know what it takes to build a people function from nothing, carry a
+              company through a messy scaling year, or sit in the room when the hard calls get made. That gap
+              shows in the roles they pitch, the questions they ask, and the matches they make.
             </p>
             <p style={{ fontSize: 13, fontWeight: 300, color: 'var(--ink-2)', lineHeight: 1.85 }}>
-              Ten years inside attorney recruiting and professional development at Kirkland & Ellis, Weil Gotshal &
-              Manges, and Locke Lord means I understand what you actually do, what you&apos;re worth, and
-              what the right next role looks like for you. That&apos;s not a pitch. It&apos;s the reason this works.
+              Our experience comes from inside these functions, across Big Law and financial services — at
+              firms like Kirkland &amp; Ellis, Weil Gotshal &amp; Manges, and Locke Lord. That means we understand
+              what you actually do, what you&apos;re worth, and what the right next role looks like for you.
+              That&apos;s not a pitch. It&apos;s the reason this works.
             </p>
           </div>
         </div>
@@ -54,13 +55,13 @@ export default function ForPeopleLeadersPage() {
       <div className="w-section w-container">
         <p className="w-eyebrow" style={{ marginBottom: 8 }}>Who we work with</p>
         <p style={{ fontSize: 13, fontWeight: 300, color: 'var(--ink-3)', marginBottom: 24, lineHeight: 1.6, maxWidth: 520 }}>
-          Legal professionals at every level, at law firms and companies hiring for legal roles.
+          Senior and executive leaders across five functions, at growing companies from seed to Series C.
         </p>
         <div className="w-grid-3" style={{ gap: 12 }}>
           {[
-            { level: 'Law firm talent & ops', examples: 'Legal Recruiting, Attorney Recruiting, Professional Development, HR, Operations, from coordinator to Chief Talent Officer' },
-            { level: 'In-house & companies', examples: 'In-house counsel, legal operations, compliance, and the talent and HR professionals supporting legal teams' },
-            { level: 'Attorneys', examples: 'Associates and senior associates exploring a lateral move, a role in-house, or a different shape of legal career' },
+            { level: 'People, HR & Talent', examples: 'CHRO, VP of People, Head of Talent Acquisition, Director of Recruiting, HR Business Partner, People Operations' },
+            { level: 'Operations & Marketing', examples: 'COO, VP of Operations, BizOps, RevOps, CMO, VP of Marketing, Head of Growth' },
+            { level: 'Legal', examples: 'General Counsel, in-house counsel, legal operations, and attorneys ready to leave Big Law for a different shape of career' },
           ].map(b => (
             <div key={b.level} className="w-card w-card-beige" style={{ padding: '20px 20px' }}>
               <span className="w-badge w-badge-gold" style={{ marginBottom: 10, display: 'inline-block' }}>{b.level}</span>
@@ -83,8 +84,8 @@ export default function ForPeopleLeadersPage() {
           </div>
           <div className="w-stack" style={{ gap: 16 }}>
             <p style={{ fontSize: 13, fontWeight: 300, color: 'var(--ink-2)', lineHeight: 1.85 }}>
-              In ten years inside Big Law, I had countless conversations with lawyers who didn&apos;t want to be
-              there forever. Brilliant people, working at the highest level, quietly telling me they had no
+              Across years inside Big Law, we had countless conversations with lawyers who didn&apos;t want to be
+              there forever. Brilliant people, working at the highest level, quietly telling us they had no
               balance, no life outside billables, and no real sense of what else was out there.
             </p>
             <p style={{ fontSize: 13, fontWeight: 300, color: 'var(--ink-2)', lineHeight: 1.85 }}>
@@ -93,8 +94,8 @@ export default function ForPeopleLeadersPage() {
               actually looked like.
             </p>
             <p style={{ fontSize: 13, fontWeight: 300, color: 'var(--ink-2)', lineHeight: 1.85 }}>
-              That&apos;s where I come in. Whether the answer is a firm that genuinely fits you better, a move
-              in-house, or something adjacent to practice altogether, I&apos;ll help you figure out what you
+              That&apos;s where we come in. Whether the answer is a firm that genuinely fits you better, a move
+              in-house, or something adjacent to practice altogether, we&apos;ll help you figure out what you
               actually want before we talk about roles. No pressure to move, and no fee to you.
             </p>
             <div style={{ marginTop: 4 }}>

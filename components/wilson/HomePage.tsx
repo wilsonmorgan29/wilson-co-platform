@@ -1,19 +1,18 @@
 'use client'
 
 import Link from 'next/link'
-import Image from 'next/image'
 
 const OFFERINGS = [
   {
     label: 'For Companies',
     badge: 'w-badge-gold',
-    body: 'Retained and contingency search for law firms and companies hiring for legal roles: talent, HR, and operations leaders, plus associate and in-house attorney placements. 90-day replacement guarantee.',
+    body: 'Retained search for executive and senior roles across People, Talent, Operations, Marketing, HR, and Legal — for venture-backed and growing companies from seed to Series C. 90-day replacement guarantee.',
     href: '/for-companies',
   },
   {
     label: 'For Candidates',
     badge: 'w-badge-oak',
-    body: 'Legal talent, HR, and operations professionals, and attorneys, looking for their next role. A 1:1 search process built around where you actually want to go — with someone who knows legal from the inside.',
+    body: 'Senior leaders across People, Talent, Operations, Marketing, HR, and Legal looking for their next role. A 1:1 search process built around where you actually want to go — not just what your resume says.',
     href: '/for-candidates',
   },
 ]
@@ -26,12 +25,12 @@ export default function HomePage() {
         <div style={{ display: 'grid', gridTemplateColumns: '1fr auto', gap: 48, alignItems: 'center' }}>
           <div>
             <h1 className="w-display" style={{ fontSize: 'clamp(28px, 4.5vw, 48px)', marginBottom: 20, maxWidth: 560 }}>
-              For the people who hire legal talent — and the legal talent ready for <em>what&apos;s next.</em>
+              For the companies building a team — and the people ready for <em>what&apos;s next.</em>
             </h1>
             <p className="w-hero-sub">
-              The Wilson Co. is focused on placing legal professionals and attorneys at growing
-              organizations that are intentional about their hiring. Founded by a former Big Law
-              recruiter. Based in NYC but serving clients nationwide.
+              The Wilson Co. places executive and senior talent across People, Talent, Operations,
+              Marketing, HR, and Legal — for growing companies that are intentional about their hiring.
+              Built by people who have worked inside these functions, across Big Law and financial services. Based in NYC but serving clients nationwide.
             </p>
             <div className="w-hero-actions">
               <Link href="/for-companies" className="w-btn w-btn-oak">For companies →</Link>
@@ -39,14 +38,30 @@ export default function HomePage() {
             </div>
           </div>
           <div style={{ flexShrink: 0 }}>
-            <div style={{ width: 320, height: 400, borderRadius: 'var(--w-radius)', overflow: 'hidden', position: 'relative' }}>
-              <Image
-                src="/morgan-home.jpg"
-                alt="Morgan Wilson"
-                fill
-                style={{ objectFit: 'cover', objectPosition: 'center top' }}
-                priority
-              />
+            <div style={{ width: 320, borderRadius: 'var(--w-radius)', border: '1px solid var(--w-border)', background: 'var(--w-bg-alt)', padding: '28px 26px' }}>
+              <p className="w-eyebrow" style={{ marginBottom: 16 }}>We search across</p>
+              <div className="w-stack" style={{ gap: 0 }}>
+                {['People & HR', 'Talent Acquisition', 'Operations', 'Marketing', 'Legal'].map((fn, i, arr) => (
+                  <div
+                    key={fn}
+                    style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: 10,
+                      padding: '11px 0',
+                      borderBottom: i < arr.length - 1 ? '1px solid var(--w-border)' : 'none',
+                    }}
+                  >
+                    <span style={{ color: 'var(--oak)', fontSize: 11 }}>✓</span>
+                    <span style={{ fontSize: 13, fontWeight: 400, color: 'var(--ink-1)' }}>{fn}</span>
+                  </div>
+                ))}
+              </div>
+              <div style={{ marginTop: 18, paddingTop: 16, borderTop: '1px solid var(--w-border)' }}>
+                <div style={{ fontSize: 11, fontWeight: 300, color: 'var(--ink-3)', lineHeight: 1.6 }}>
+                  Executive and senior search for growing companies, seed to Series C.
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -104,21 +119,20 @@ export default function HomePage() {
           <div>
             <p className="w-eyebrow" style={{ marginBottom: 16 }}>Our why</p>
             <h2 className="w-display" style={{ fontSize: 'clamp(22px, 3vw, 32px)', marginBottom: 0 }}>
-              Two things I saw <em>inside those firms.</em>
+              Two things we saw <em>from the inside.</em>
             </h2>
           </div>
           <div>
             <p style={{ fontSize: 13, fontWeight: 300, color: 'var(--ink-2)', lineHeight: 1.85, marginBottom: 16 }}>
-              The first: law firms run on their lawyers — they are the product. And yet the teams responsible for
-              recruiting, developing, and keeping those lawyers are consistently the most overlooked ones. Filled
-              last. Resourced least. The right hire in those seats shapes a firm&apos;s culture and retention more
-              than almost any other decision it makes.
+              The first: the functions that actually hold a company together — people, talent, operations,
+              marketing — are consistently the most overlooked when it comes to how they get hired for. Filled
+              last. Resourced least. And yet the right hire in those seats shapes culture, retention, and growth
+              more than almost any other decision a company makes.
             </p>
             <p style={{ fontSize: 13, fontWeight: 300, color: 'var(--ink-2)', lineHeight: 1.85, marginBottom: 20 }}>
-              The second, and the one I think about more: I had countless conversations with lawyers who didn&apos;t
-              want to be in Big Law forever. Brilliant people at the highest level, quietly telling me they had no
-              balance and no real sense of what else was out there. Most weren&apos;t unhappy with the law. They were
-              unhappy with the shape of the job. The Wilson Co. exists for both of them.
+              The second: we had countless conversations with people at the top of their field who quietly
+              admitted they had no balance and no real sense of what else was out there. Most weren&apos;t unhappy
+              with the work. They were unhappy with the shape of the job. The Wilson Co. exists for both of them.
             </p>
             <Link href="/about" className="w-btn w-btn-outline" style={{ fontSize: 11 }}>About Morgan →</Link>
           </div>
@@ -133,7 +147,7 @@ export default function HomePage() {
             Not sure where to start? <em>Start here.</em>
           </h2>
           <p style={{ fontSize: 13, fontWeight: 300, color: 'var(--ink-3)', lineHeight: 1.75, maxWidth: 420, margin: '0 auto 24px' }}>
-            Whether you&apos;re a law firm or company making a legal hire, or a legal professional ready for your next move —
+            Whether you&apos;re a company making a senior hire, or a leader ready for your next move —
             reach out. We&apos;d love to hear where you are.
           </p>
           <div className="w-hero-actions" style={{ justifyContent: 'center' }}>

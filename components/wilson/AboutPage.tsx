@@ -10,11 +10,12 @@ export default function AboutPage() {
           <div>
             <p className="w-eyebrow" style={{ marginBottom: 16 }}>About Morgan Wilson</p>
             <h1 className="w-display" style={{ fontSize: 'clamp(28px, 4vw, 44px)', marginBottom: 20, maxWidth: 620 }}>
-              I spent a decade hiring for law firms from the inside. Now I help them <em>from the outside.</em>
+              I spent my career building these functions from the inside. Now I build them <em>for other companies.</em>
             </h1>
             <p className="w-hero-sub">
-              From assistant to Director across three of the world&apos;s most prestigious law firms —
-              and now running my own recruiting practice focusing on legal services and attorney roles, the industry I know best.
+              From assistant to Director across three of the world&apos;s most prestigious law firms, then into
+              financial services — and now running a recruiting practice built on what I learned doing the work
+              in both.
             </p>
           </div>
           <div style={{ flexShrink: 0, marginRight: -24, marginTop: -40 }}>
@@ -38,26 +39,26 @@ export default function AboutPage() {
           <div>
             <p className="w-eyebrow" style={{ marginBottom: 14 }}>The background</p>
             <h2 className="w-display" style={{ fontSize: 'clamp(20px, 2.5vw, 28px)' }}>
-              Assistant to Director — at three of <em>the best firms in the world.</em>
+              A decade in Big Law. Then <em>a different industry entirely.</em>
             </h2>
           </div>
           <div className="w-stack" style={{ gap: 16 }}>
             <p style={{ fontSize: 13, fontWeight: 300, color: 'var(--ink-2)', lineHeight: 1.85 }}>
               I started my career as a recruiting assistant and worked my way up to Director — building that
               progression across three of the largest and most prestigious law firms in the world: Kirkland &amp; Ellis,
-              Weil Gotshal &amp; Manges, and Locke Lord. Then I spent a year and a half at a boutique
-              wealth management firm, deliberately stepping into a different industry to see how talent and people
-              strategy worked outside of Big Law.
+              Weil Gotshal &amp; Manges, and Locke Lord. Then I spent a year and a half in wealth management,
+              deliberately stepping into financial services to see how talent and people strategy worked outside
+              of Big Law.
             </p>
             <p style={{ fontSize: 13, fontWeight: 300, color: 'var(--ink-2)', lineHeight: 1.85 }}>
-              I built recruiting programs, sourcing strategies, onboarding infrastructure, development frameworks
-              and much more — not as someone brought in from the outside, but as a member of the function,
-              doing the work. I sat in the rooms where decisions got made about who to hire, how to build a team,
-              and what it actually took to retain the people worth keeping.
+              Across both industries I built recruiting programs, sourcing strategies, onboarding infrastructure,
+              development frameworks and much more — not as someone brought in from the outside, but as a member
+              of the function, doing the work. I sat in the rooms where decisions got made about who to hire, how
+              to build a team, and what it actually took to retain the people worth keeping.
             </p>
             <p style={{ fontSize: 13, fontWeight: 300, color: 'var(--ink-2)', lineHeight: 1.85 }}>
-              What I kept seeing, across every organization, was the same gap: the teams responsible for hiring
-              and developing people were often the least invested in themselves. Strong recruiting and people
+              Two industries with completely different cultures, and the same gap in both: the teams responsible
+              for hiring and developing people were the least invested in themselves. Strong recruiting and people
               strategy had an enormous ripple effect on everything else — culture, retention, growth, morale —
               but the function itself was treated as an afterthought. I knew I could do something about that.
             </p>
@@ -81,21 +82,22 @@ export default function AboutPage() {
           <div>
             <p className="w-eyebrow" style={{ marginBottom: 14 }}>Why this niche</p>
             <h2 className="w-display" style={{ fontSize: 'clamp(20px, 2.5vw, 28px)' }}>
-              The industry I know <em>best.</em>
+              The functions I know <em>best.</em>
             </h2>
           </div>
           <div className="w-stack" style={{ gap: 16 }}>
             <p style={{ fontSize: 13, fontWeight: 300, color: 'var(--ink-2)', lineHeight: 1.85 }}>
-              Law firms run on people. Their lawyers are the product, and the talent, HR, and operations teams behind
-              them decide who gets hired, how they develop, and whether they stay. Those teams are often treated as
-              overhead. I would argue they&apos;re the most important seat in the building. Companies hiring for legal
-              roles need that same understanding of how legal teams actually work.
+              Every company runs on people, and the teams that hire and develop them — people, talent, operations,
+              marketing, legal — decide who comes in, how they grow, and whether they stay. Those teams are often
+              treated as overhead. I would argue they hold the most important seats in the building, and seeing
+              that play out the same way in two very different industries is what convinced me it was structural,
+              not specific to one world.
             </p>
             <p style={{ fontSize: 13, fontWeight: 300, color: 'var(--ink-2)', lineHeight: 1.85 }}>
               I started The Wilson Co. because I&apos;d seen what happens when these roles are filled well, and
-              (more importantly) what happens when they aren&apos;t. Most recruiters placing people into legal have never
-              worked inside a law firm. They know the job description. They don&apos;t know the job. I do. And
-              that difference changes everything about how a search gets run and what the right match actually
+              (more importantly) what happens when they aren&apos;t. Most recruiters staffing these functions have
+              never worked inside one. They know the job description. They don&apos;t know the job. I do. And that
+              difference changes everything about how a search gets run and what the right match actually
               looks like.
             </p>
           </div>

@@ -3,7 +3,7 @@ import ForPeopleLeadersPage from './ForPeopleLeadersPage'
 
 export const metadata = {
   title: 'For Candidates — The Wilson Co.',
-  description: 'A 1:1 search process for legal talent, HR, and operations professionals and attorneys — at law firms and companies hiring for legal roles. No fee to candidates.',
+  description: 'A 1:1 search process for senior leaders across People, Talent, Operations, Marketing, HR, and Legal. No fee to candidates.',
 }
 
 export default function Page() {

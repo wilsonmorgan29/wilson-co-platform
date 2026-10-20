@@ -15,7 +15,7 @@ const SERVICES = [
     details: [
       '1:1 engagement — not group sessions',
       'Career transition, pivot, and advancement support',
-      'Attorneys and legal professionals at any stage',
+      'Senior professionals at any stage',
       '3-session, 6-session, or ongoing engagements',
       'Based in NYC · available virtually, nationwide',
     ],
@@ -69,8 +69,8 @@ export default function AdditionalServicesPage() {
           Beyond the placement, <em>a few other ways we help.</em>
         </h1>
         <p className="w-hero-sub" style={{ maxWidth: 580 }}>
-          Recruiting is the core of what we do. But a decade inside Big Law built expertise
-          that doesn&apos;t only apply to search — so we take on a select number of coaching, consulting, and
+          Recruiting is the core of what we do. But years inside these functions built expertise that
+          doesn&apos;t only apply to search — so we take on a select number of coaching, consulting, and
           workshop engagements alongside it.
         </p>
       </div>

@@ -9,27 +9,27 @@ export default function PricingPage() {
         <p className="w-eyebrow" style={{ marginBottom: 0 }}>Transparent pricing</p>
         <h1 className="w-display" style={{ fontSize: 36, marginTop: 14, marginBottom: 10 }}>Simple, <em>honest</em> pricing.</h1>
         <p className="w-hero-sub">
-          Recruiting fees are scoped per engagement based on role level, timeline, and complexity.
-          No surprises — what you see is what you pay.
+          Every engagement is scoped to the role, the timeline, and the complexity of the search —
+          and agreed before we begin. No surprises, no mid-process changes.
         </p>
       </div>
 
       <div className="w-container">
 
-        {/* Fee differentiators */}
+        {/* Guarantee */}
         <div style={{ display: 'flex', gap: 16, marginBottom: 24, flexWrap: 'wrap' }}>
           <div style={{ background: 'var(--oak)', borderRadius: 'var(--w-radius)', padding: '14px 20px', display: 'flex', alignItems: 'center', gap: 10 }}>
             <span style={{ fontSize: 18, color: '#fff' }}>✓</span>
             <div>
-              <div style={{ fontSize: 12, fontWeight: 700, color: '#fff', letterSpacing: '0.02em' }}>25–30% fee</div>
-              <div style={{ fontSize: 10, color: 'rgba(255,255,255,0.75)', fontWeight: 300 }}>of first-year compensation</div>
+              <div style={{ fontSize: 12, fontWeight: 700, color: '#fff', letterSpacing: '0.02em' }}>90-day guarantee</div>
+              <div style={{ fontSize: 10, color: 'rgba(255,255,255,0.75)', fontWeight: 300 }}>replacement search at no additional fee</div>
             </div>
           </div>
           <div style={{ background: 'var(--w-bg-alt)', border: '1px solid var(--w-border)', borderRadius: 'var(--w-radius)', padding: '14px 20px', display: 'flex', alignItems: 'center', gap: 10 }}>
             <span style={{ fontSize: 18, color: 'var(--oak)' }}>✓</span>
             <div>
-              <div style={{ fontSize: 12, fontWeight: 600, color: 'var(--ink-1)', letterSpacing: '0.02em' }}>90-day guarantee</div>
-              <div style={{ fontSize: 10, color: 'var(--ink-3)', fontWeight: 300 }}>replacement search at no additional fee</div>
+              <div style={{ fontSize: 12, fontWeight: 600, color: 'var(--ink-1)', letterSpacing: '0.02em' }}>No cost to candidates</div>
+              <div style={{ fontSize: 10, color: 'var(--ink-3)', fontWeight: 300 }}>our fee is paid by the hiring company</div>
             </div>
           </div>
         </div>
@@ -39,20 +39,20 @@ export default function PricingPage() {
         {/* Recruiting */}
         <p className="w-eyebrow" style={{ marginBottom: 6 }}>Recruiting</p>
         <p style={{ fontSize: 12, fontWeight: 300, color: 'var(--ink-3)', marginBottom: 16, lineHeight: 1.6 }}>
-          Retained and contingency search for law firms and companies hiring for legal roles: talent, HR, and operations
-          roles, plus associate and in-house attorney placements. Fee is structured as a percentage of first-year compensation,
-          scoped per engagement.
+          Retained search for executive and senior roles across People, Talent, Operations, Marketing, HR,
+          and Legal, for growing companies from seed to Series C. Every engagement is scoped and agreed
+          before the search begins.
         </p>
         <div className="w-grid-2" style={{ marginBottom: 32 }}>
           <div className="w-tier-card">
-            <span className="w-badge w-badge-gold" style={{ marginBottom: 10, display: 'inline-block' }}>Single placement</span>
+            <span className="w-badge w-badge-gold" style={{ marginBottom: 10, display: 'inline-block' }}>Single search</span>
             <div className="w-tier-price" style={{ fontSize: 22, paddingTop: 4 }}>By scope</div>
-            <div className="w-tier-per">contingency or retained</div>
+            <div className="w-tier-per">one executive or senior role</div>
             {[
-              'Legal talent, HR & operations roles',
-              'Associate and in-house attorney placements',
+              'People, Talent, Ops, Marketing & Legal',
+              'Executive and senior-level search',
               'Full search management — sourcing through close',
-              'Fee structured as % of first-year comp',
+              'Scoped and agreed before we begin',
               '90-day replacement guarantee',
             ].map(line => (
               <div key={line} className="w-tier-line"><div className="w-tier-dot" /><div>{line}</div></div>
@@ -63,14 +63,14 @@ export default function PricingPage() {
           </div>
 
           <div className="w-tier-card" style={{ border: '2px solid var(--oak)' }}>
-            <span className="w-badge w-badge-oak" style={{ marginBottom: 10, display: 'inline-block' }}>Retainer search</span>
+            <span className="w-badge w-badge-oak" style={{ marginBottom: 10, display: 'inline-block' }}>Ongoing partnership</span>
             <div className="w-tier-price" style={{ fontSize: 22, paddingTop: 4 }}>By scope</div>
-            <div className="w-tier-per">ongoing search partnership</div>
+            <div className="w-tier-per">multiple or ongoing roles</div>
             {[
               'Ongoing partnership beyond a single placement',
               'Strategy, structure, and talent advisory',
               'Priority pipeline and sourcing',
-              'Best for companies looking to grow and build',
+              'Best for companies building a team',
               '90-day replacement guarantee on each placement',
             ].map(line => (
               <div key={line} className="w-tier-line"><div className="w-tier-dot" /><div>{line}</div></div>
@@ -87,10 +87,10 @@ export default function PricingPage() {
         <p className="w-eyebrow" style={{ marginBottom: 16 }}>How fees work</p>
         <div className="w-grid-2" style={{ marginBottom: 40 }}>
           {[
-            { q: 'What does "by scope" mean?', a: 'Every search is different. Fee percentage and structure (retained vs. contingency) are agreed upon before the search begins — no surprises mid-process.' },
+            { q: 'What does "by scope" mean?', a: 'Every search is different. We agree the structure and cost of the engagement before the search begins — no surprises mid-process.' },
             { q: 'What triggers the 90-day guarantee?', a: 'If a placed candidate leaves or is let go within 90 days of their start date for any reason other than layoff, we conduct a replacement search at no additional fee.' },
-            { q: 'Retained vs. contingency — which is right?', a: 'Retained searches involve an upfront fee and are best for senior, urgent, or confidential roles. Contingency is fee-on-placement and works well for roles where the timeline is more flexible. We\'ll help you figure out which structure makes sense for your situation.' },
-            { q: 'Is there a fee for candidates?', a: 'No. If you\'re a legal professional or attorney looking for your next role, there\'s no cost to work with us. Our fee is paid by the hiring company.' },
+            { q: 'How do you scope an engagement?', a: 'It depends on the level of the role, the timeline, and how complex the search is. We talk through all of it up front and agree on terms before any work starts.' },
+            { q: 'Is there a fee for candidates?', a: 'No. If you\'re a candidate looking for your next role, there\'s no cost to work with us. Our fee is paid by the hiring company.' },
           ].map(item => (
             <div key={item.q} className="w-card w-card-beige" style={{ padding: '20px 22px' }}>
               <div style={{ fontSize: 12, fontWeight: 600, color: 'var(--ink-1)', marginBottom: 8, lineHeight: 1.4 }}>{item.q}</div>
@@ -117,7 +117,7 @@ export default function PricingPage() {
             <div className="w-tier-price" style={{ fontSize: 22, paddingTop: 4 }}>Let&apos;s talk</div>
             <div className="w-tier-per">scoped to your goals</div>
             {[
-              '1:1 60-minute sessions with Morgan',
+              '1:1 60-minute coaching sessions',
               'Single sessions or multi-session packages',
               'Lower per-session rate on packages',
               'Video or in person (NYC)',
