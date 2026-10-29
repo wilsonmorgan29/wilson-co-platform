@@ -60,6 +60,20 @@ export default function ContactPage() {
           {/* Left — info */}
           <div>
             <div className="w-card w-card-beige" style={{ marginBottom: 12 }}>
+              <p className="w-eyebrow" style={{ marginBottom: 10 }}>Reach us directly</p>
+              <a
+                href="mailto:morgan.wilson@thewilson.co"
+                style={{ fontSize: 14, fontWeight: 500, color: 'var(--oak)', textDecoration: 'none', display: 'block', marginBottom: 8 }}
+              >
+                morgan.wilson@thewilson.co
+              </a>
+              <p style={{ fontSize: 12, fontWeight: 300, color: 'var(--ink-3)', lineHeight: 1.7 }}>
+                Prefer email over the form? Write to us directly — it reaches the same inbox, and every
+                conversation is confidential.
+              </p>
+            </div>
+
+            <div className="w-card w-card-beige" style={{ marginBottom: 12 }}>
               <p className="w-eyebrow" style={{ marginBottom: 10 }}>New York City</p>
               <p style={{ fontSize: 13, fontWeight: 300, color: 'var(--ink-2)', lineHeight: 1.75 }}>
                 Based in New York City, working with clients across the country. We&apos;re available

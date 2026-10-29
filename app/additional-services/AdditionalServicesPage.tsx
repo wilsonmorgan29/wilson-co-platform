@@ -15,7 +15,7 @@ const SERVICES = [
     details: [
       '1:1 engagement — not group sessions',
       'Career transition, pivot, and advancement support',
-      'Senior professionals at any stage',
+      'Senior and executive professionals at any stage',
       '3-session, 6-session, or ongoing engagements',
       'Based in NYC · available virtually, nationwide',
     ],
@@ -86,7 +86,7 @@ export default function AdditionalServicesPage() {
               Looking to hire, or looking for your next role?
             </div>
             <div style={{ fontSize: 12, fontWeight: 300, color: 'var(--ink-3)', lineHeight: 1.6 }}>
-              Legal recruiting for law firms, in-house teams, and attorneys is our primary practice.
+              Executive search across People, Talent, Operations, Marketing, HR, and Legal is our primary practice.
             </div>
           </div>
           <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap' }}>

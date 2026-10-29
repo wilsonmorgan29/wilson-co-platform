@@ -75,6 +75,7 @@ export default function WilsonShell({ children }: { children: React.ReactNode })
               <a href="https://www.instagram.com/thewilson.co" target="_blank" rel="noopener noreferrer" style={{ fontSize: 10, color: 'var(--oak-light)', letterSpacing: '0.08em', textDecoration: 'none' }}>Instagram</a>
               <a href="https://www.linkedin.com/company/thewilsonco" target="_blank" rel="noopener noreferrer" style={{ fontSize: 10, color: 'var(--oak-light)', letterSpacing: '0.08em', textDecoration: 'none' }}>LinkedIn</a>
               <Link href="/press" style={{ fontSize: 10, color: 'var(--oak-light)', letterSpacing: '0.08em', textDecoration: 'none' }}>Press</Link>
+              <a href="mailto:morgan.wilson@thewilson.co" style={{ fontSize: 10, color: 'var(--oak-light)', letterSpacing: '0.08em', textDecoration: 'none' }}>Email</a>
             </div>
           </div>
 
